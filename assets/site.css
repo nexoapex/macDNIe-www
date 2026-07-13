@@ -403,3 +403,5 @@ a { color: inherit; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .transcript.armed .ln { opacity: 1; transform: none; }
 }
+
+.section-intro.spaced { margin-top: 48px; }

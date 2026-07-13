@@ -1,0 +1,26 @@
+# macDNIe
+
+> macDNIe is an unofficial macOS app to read, authenticate with, and sign documents using the Spanish electronic national ID card (DNIe / Documento Nacional de Identidad electrónico). All processing happens on-device — the PIN and personal data never leave the Mac. The interface is available in Spanish, Catalan, Basque and Galician. Publisher: nexoapex. It is not affiliated with or endorsed by the Spanish government.
+
+## What macDNIe does
+- Reads the DNIe's personal data and photo, entirely on-device.
+- Signs you in to Spanish e-government sites (sedes electrónicas) from Safari, Chrome, Edge and Firefox.
+- Signs documents in PAdES (PDF), CAdES and XAdES formats, with an RFC-3161 timestamp; also validates already-signed documents.
+- Interoperates with AutoFirma through a bundled PKCS#11 module (it complements AutoFirma, it does not replace it by force).
+
+## Key facts
+- Requires macOS 13 or later (Intel or Apple Silicon) and a USB contact card reader (CCID). DNIe 3.0/4.0 add NFC but are used through the reader.
+- No telemetry, no analytics, no trackers — in the app or on this website.
+- Detects the DNIe generation (1.0 to 4.0) and gives in-app guidance for a blocked PIN or expired certificates.
+- The DNIe has no PUK: a blocked PIN can only be reset in person at a police DNIe Update Point (PAD) with a fingerprint, with no appointment. Certificates (valid ~2 years) are renewed the same way, for free; there is no online renewal.
+- Pricing: €10 per year, or €150 for a lifetime license, via native Apple In-App Purchase.
+- Status: in review on the Mac App Store; not yet available to download.
+
+## Pages
+- [Home (Spanish)](https://macdnie.com/): overview, features, pricing and FAQ.
+- [Home (English)](https://macdnie.com/en/): the English version of the site.
+- [Privacy policy](https://macdnie.com/privacidad.html) — [Privacy policy (English)](https://macdnie.com/en/privacy.html)
+- [Terms of use](https://macdnie.com/condiciones.html) — [Terms of use (English)](https://macdnie.com/en/terms.html)
+
+## Contact
+- Email: macdnie@nexoapex.com

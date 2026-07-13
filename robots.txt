@@ -1,4 +1,28 @@
+# macdnie.com — all crawlers welcome, including AI answer engines.
+# We want macDNIe to be findable and citable. Nothing here is disallowed.
 User-agent: *
+Allow: /
+
+# AI / answer-engine crawlers are explicitly welcome.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://macdnie.com/sitemap.xml

@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>macDNIe — Read, sign in and sign documents with your Spanish DNIe on your Mac</title>
-  <meta name="description" content="macDNIe reads your Spanish DNIe, signs you in to e-government sites (Safari, Chrome, Edge, Firefox and AutoFirma) and signs PAdES, CAdES and XAdES documents on your Mac. No telemetry: your PIN and data never leave the machine. €10/year or €150 for life.">
+  <title>macDNIe — Read, sign in and sign with your DNIe on Mac</title>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="nexoapex">
+  <meta name="description" content="Read your Spanish DNIe, sign in to e-government sites (Safari, Chrome, Edge, Firefox, AutoFirma) and sign PAdES/CAdES/XAdES on your Mac. No telemetry.">
   <link rel="canonical" href="https://macdnie.com/en/">
   <link rel="alternate" hreflang="es" href="https://macdnie.com/">
   <link rel="alternate" hreflang="en" href="https://macdnie.com/en/">
@@ -12,9 +14,13 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://macdnie.com/en/">
   <meta property="og:site_name" content="macDNIe">
-  <meta property="og:title" content="macDNIe — Read, sign in and sign documents with your Spanish DNIe on your Mac">
+  <meta property="og:title" content="macDNIe — Read, sign in and sign with your DNIe on Mac">
   <meta property="og:description" content="Unofficial DNIe reader and signer for macOS. Every browser, PAdES/CAdES/XAdES signing with timestamps, and not one byte leaves your Mac.">
   <meta property="og:image" content="https://macdnie.com/og.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="macDNIe — Spanish DNIe reader and signer for macOS">
+  <meta name="twitter:image" content="https://macdnie.com/og.png">
+  <meta name="twitter:image:alt" content="macDNIe — Spanish DNIe reader and signer for macOS">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_US">
@@ -23,39 +29,164 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e7e7e2">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121419">
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="../assets/site.css">
   <script defer src="../assets/site.js"></script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "macDNIe",
-    "url": "https://macdnie.com/en/",
-    "operatingSystem": "macOS 13.0 or later",
-    "applicationCategory": "UtilitiesApplication",
-    "inLanguage": ["es", "ca", "eu", "gl"],
-    "description": "Unofficial reader and signer for the Spanish DNIe on macOS: reads identity data and photo, signs you in to e-government sites from Safari, Chrome, Edge and Firefox, and signs PAdES, CAdES and XAdES documents with timestamps. All processing happens on-device.",
-    "offers": [
-      {
-        "@type": "Offer",
-        "name": "Annual subscription",
-        "price": "10.00",
-        "priceCurrency": "EUR",
-        "category": "subscription"
-      },
-      {
-        "@type": "Offer",
-        "name": "Lifetime license",
-        "price": "150.00",
-        "priceCurrency": "EUR"
-      }
-    ],
-    "author": {
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "Organization",
+      "@id": "https://macdnie.com/#org",
       "name": "nexoapex",
-      "email": "macdnie@nexoapex.com"
+      "url": "https://macdnie.com/",
+      "email": "macdnie@nexoapex.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://macdnie.com/assets/icon-512.png",
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://macdnie.com/#website",
+      "url": "https://macdnie.com/",
+      "name": "macDNIe",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://macdnie.com/#org"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://macdnie.com/en/#webpage",
+      "url": "https://macdnie.com/en/",
+      "name": "macDNIe — Read, sign in and sign with your DNIe on Mac",
+      "isPartOf": {
+        "@id": "https://macdnie.com/#website"
+      },
+      "inLanguage": "en",
+      "primaryImageOfPage": "https://macdnie.com/og.png",
+      "about": {
+        "@id": "https://macdnie.com/#app"
+      },
+      "description": "Unofficial Spanish DNIe reader and signer for macOS: reads your data and photo, signs you in to e-government sites from Safari, Chrome, Edge and Firefox, and signs PAdES, CAdES and XAdES documents with a timestamp. All processing happens on your device.",
+      "datePublished": "2026-07-13",
+      "dateModified": "2026-07-13"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://macdnie.com/#app",
+      "name": "macDNIe",
+      "url": "https://macdnie.com/",
+      "operatingSystem": "macOS 13.0+",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Security",
+      "inLanguage": [
+        "es",
+        "ca",
+        "eu",
+        "gl"
+      ],
+      "softwareVersion": "1.0",
+      "description": "Unofficial Spanish DNIe reader and signer for macOS: reads your data and photo, signs you in to e-government sites from Safari, Chrome, Edge and Firefox, and signs PAdES, CAdES and XAdES documents with a timestamp. All processing happens on your device.",
+      "featureList": [
+        "Reads DNIe personal data and photo",
+        "Sign-in to e-government sites from Safari, Chrome, Edge and Firefox",
+        "PAdES, CAdES and XAdES document signing with RFC-3161 timestamp",
+        "Signed-document validation",
+        "Interoperable with AutoFirma via a PKCS#11 module",
+        "Guidance for blocked PIN or expired certificates",
+        "100% on-device processing, no telemetry",
+        "Interface in Spanish, Catalan, Basque and Galician"
+      ],
+      "screenshot": "https://macdnie.com/og.png",
+      "publisher": {
+        "@id": "https://macdnie.com/#org"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Suscripción anual / Annual subscription",
+          "price": "10.00",
+          "priceCurrency": "EUR",
+          "category": "subscription",
+          "availability": "https://schema.org/PreOrder",
+          "url": "https://macdnie.com/#descargar"
+        },
+        {
+          "@type": "Offer",
+          "name": "Licencia de por vida / Lifetime license",
+          "price": "150.00",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/PreOrder",
+          "url": "https://macdnie.com/#descargar"
+        }
+      ],
+      "datePublished": "2026-07-13",
+      "dateModified": "2026-07-13"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://macdnie.com/en/#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this an official app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. macDNIe is an independent product by nexoapex, not affiliated with or endorsed by Spain's Dirección General de la Policía, the Ministry of the Interior or the Government of Spain. Your DNIe and its certificates are official —issued by the Police— and the signatures follow the European standards PAdES, CAdES and XAdES; macDNIe is just the tool you use them with on your Mac."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My PIN is blocked. What do I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "After 3 failed attempts the DNIe blocks and there is no PUK: the only way to set a new PIN is in person, and no appointment is needed. Go to a DNIe issuing office (police station), use a DNIe Update Point (PAD) and identify yourself with your fingerprint. It cannot be unblocked online or by phone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My certificates have expired. Is the card useless?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The card still works. DNIe certificates expire about every 2 years, before the physical document. With them expired you can still read your data but not sign in or sign. Renewing is free and needs no appointment at a DNIe Update Point (PAD); there is no online renewal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work with my DNIe? (generations 1.0 to 4.0)",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. macDNIe works with a contact card reader (USB, CCID) and detects the generation automatically. DNIe 1.0 and 2.0 are contact-only; DNIe 3.0 and 4.0 add NFC, but with macDNIe they are used through the reader like the rest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What about AutoFirma? And Firefox?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sites that require AutoFirma keep working: macDNIe is interoperable with it. In Safari, Chrome and Edge sign-in uses macOS's native integration (CryptoTokenKit); Firefox doesn't use it, so macDNIe includes its own PKCS#11 module, in the direct-download edition, so you can sign in from Firefox too."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do I need to get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Mac with macOS 13 or later (Intel or Apple Silicon), a USB contact card reader, your DNIe and your PIN. Nothing else: no Java, no system configuration, no profiles."
+          }
+        }
+      ]
     }
-  }
+  ]
+}
   </script>
 </head>
 <body>
@@ -183,7 +314,7 @@
         </div>
       </dl>
 
-      <p class="section-intro" style="margin-top:48px">And when things go wrong, it still helps: if your PIN is blocked or your certificates have expired, macDNIe doesn't stop at a cryptic error — it tells you exactly <a href="#faq">what to do and where</a>.</p>
+      <p class="section-intro spaced">And when things go wrong, it still helps: if your PIN is blocked or your certificates have expired, macDNIe doesn't stop at a cryptic error — it tells you exactly <a href="#faq">what to do and where</a>.</p>
     </section>
 
     <!-- ── languages ── -->
