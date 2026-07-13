@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://macdnie.com/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/"/>
+  </url>
+  <url>
+    <loc>https://macdnie.com/en/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/"/>
+  </url>
+  <url>
+    <loc>https://macdnie.com/privacidad.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://macdnie.com/en/privacy.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://macdnie.com/condiciones.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/condiciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://macdnie.com/en/terms.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/condiciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/terms.html"/>
+  </url>
+</urlset>

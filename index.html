@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>macDNIe — Lee, identifícate y firma con tu DNIe en el Mac</title>
+  <meta name="description" content="macDNIe lee tu DNIe, te identifica en las sedes electrónicas (Safari, Chrome, Edge, Firefox y AutoFirma) y firma PAdES, CAdES y XAdES en tu Mac. Sin telemetría: tu PIN y tus datos nunca salen del equipo. 10 €/año o 150 € de por vida.">
+  <link rel="canonical" href="https://macdnie.com/">
+  <link rel="alternate" hreflang="es" href="https://macdnie.com/">
+  <link rel="alternate" hreflang="en" href="https://macdnie.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://macdnie.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://macdnie.com/">
+  <meta property="og:site_name" content="macDNIe">
+  <meta property="og:title" content="macDNIe — Lee, identifícate y firma con tu DNIe en el Mac">
+  <meta property="og:description" content="Lector y firmador no oficial del DNIe para macOS. Todos los navegadores, firma PAdES/CAdES/XAdES con sello de tiempo, y ni un dato fuera de tu Mac.">
+  <meta property="og:image" content="https://macdnie.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e7e7e2">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121419">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "macDNIe",
+    "url": "https://macdnie.com/",
+    "operatingSystem": "macOS 13.0 o posterior",
+    "applicationCategory": "UtilitiesApplication",
+    "inLanguage": ["es", "ca", "eu", "gl"],
+    "description": "Lector y firmador no oficial del DNIe para macOS: lectura de datos y fotografía, identificación en sedes electrónicas desde Safari, Chrome, Edge y Firefox, y firma de documentos PAdES, CAdES y XAdES con sello de tiempo. Todo el tratamiento ocurre en el dispositivo.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Suscripción anual",
+        "price": "10.00",
+        "priceCurrency": "EUR",
+        "category": "subscription"
+      },
+      {
+        "@type": "Offer",
+        "name": "Licencia de por vida",
+        "price": "150.00",
+        "priceCurrency": "EUR"
+      }
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "nexoapex",
+      "email": "david@nexoapex.com"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="wrap site-head">
+    <a class="brand" href="index.html" aria-label="macDNIe, inicio">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M33 17 C 37 9.5, 46 9, 46 9 C 46 9, 45 17.5, 38.5 20 C 35.3 21.1, 33.4 19.6, 33 17 Z" fill="var(--gold)"/>
+        <path d="M31.4 18.5 C 30.8 14.5, 30.2 12, 28.4 10" fill="none" stroke="var(--ink)" stroke-width="2.1" stroke-linecap="round"/>
+        <path d="M32 21.5 C 26.5 13.8, 14 12.8, 10.5 23.2 C 7.4 32.4, 11.6 50.8, 23 54.2 C 27 55.4, 29.9 53.6, 32 53.6 C 34.1 53.6, 37 55.4, 41 54.2 C 52.4 50.8, 56.6 32.4, 53.5 23.2 C 50 12.8, 37.5 13.8, 32 21.5 Z" fill="var(--ink)"/>
+        <rect x="22.3" y="30" width="19.4" height="14.6" rx="2.4" fill="#c79a2e"/>
+        <g stroke="#17130a" stroke-width="1.3" fill="none" opacity="0.9">
+          <rect x="27.4" y="33.2" width="9.2" height="8.2" rx="1.3"/>
+          <line x1="22.3" y1="37.3" x2="27.4" y2="37.3"/>
+          <line x1="36.6" y1="37.3" x2="41.7" y2="37.3"/>
+          <line x1="32" y1="30" x2="32" y2="33.2"/>
+          <line x1="32" y1="41.4" x2="32" y2="44.6"/>
+        </g>
+      </svg>
+      <b>mac<span>DNIe</span></b>
+    </a>
+    <nav class="site-nav" aria-label="Principal">
+      <a class="nav-link" href="#funciones">Funciones</a>
+      <a class="nav-link" href="#como-funciona">Privacidad</a>
+      <a class="nav-link" href="#precio">Precio</a>
+      <a class="nav-link" href="#faq">Preguntas</a>
+      <a class="lang-switch" href="en/index.html" hreflang="en" lang="en" aria-label="Read this page in English">EN</a>
+      <a class="nav-cta" href="#descargar">Descargar</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- ── hero ── -->
+    <section class="wrap hero">
+      <div>
+        <p class="eyebrow">Para macOS · lector y firmador del DNIe · <span class="unofficial">producto no oficial</span></p>
+        <h1>Tu DNIe y tu Mac, por fin se entienden.</h1>
+        <p class="lede">macDNIe lee tu tarjeta, te identifica en las sedes electrónicas y firma tus documentos en los formatos europeos estándar. En tu idioma, en todos tus navegadores — y sin que un solo dato salga de tu Mac.</p>
+        <div class="cta-row">
+          <!-- En revisión en el Mac App Store. TODO: sustituir por el badge oficial (enlazado) cuando se apruebe. -->
+          <span class="btn btn-appstore btn-review" role="note" aria-label="Próximamente en el Mac App Store; en revisión, aún no disponible">
+            <span class="two-line"><small>Próximamente en el</small> Mac App Store</span>
+            <span class="review-pill">En revisión</span>
+          </span>
+          <a class="btn btn-ghost" href="#como-funciona">Cómo funciona</a>
+        </div>
+        <p class="hero-note">macOS 13+ · lector de tarjetas USB · español, català, euskara, galego</p>
+      </div>
+
+      <div class="instrument" aria-hidden="false">
+        <div class="idcard" role="img" aria-label="Representación abstracta de una tarjeta DNIe: chip de contactos dorado y datos personales ocultos">
+          <svg class="chip" viewBox="0 0 44 34" aria-hidden="true">
+            <rect x="0.75" y="0.75" width="42.5" height="32.5" rx="5" fill="var(--gold)"/>
+            <g stroke="var(--gold-ink)" stroke-width="1.4" fill="none" opacity="0.55">
+              <rect x="12.5" y="8.5" width="19" height="17" rx="2.6"/>
+              <line x1="0.75" y1="17" x2="12.5" y2="17"/>
+              <line x1="31.5" y1="17" x2="43.25" y2="17"/>
+              <line x1="22" y1="0.75" x2="22" y2="8.5"/>
+              <line x1="22" y1="25.5" x2="22" y2="33.25"/>
+            </g>
+          </svg>
+          <div class="redacted" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="microtext" aria-hidden="true">ISO/IEC&nbsp;7816-4&nbsp;·&nbsp;CWA&nbsp;14890&nbsp;·&nbsp;PKCS#15</div>
+        </div>
+        <ul class="transcript" aria-label="Ejemplo del registro de conexión de macDNIe">
+          <li class="ln">» DNIe detectado — generación 3.0</li>
+          <li class="ln">» canal seguro CWA-14890 establecido · <span class="sw">9000</span> <span class="ok">✓</span></li>
+          <li class="ln">» certificado de firma: vigente</li>
+          <li class="ln">» firmado (PAdES) · sello de tiempo RFC-3161 <span class="ok">✓</span><span class="caret" aria-hidden="true"></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── the three journeys ── -->
+    <section class="wrap section" id="funciones">
+      <p class="eyebrow">Tres gestos</p>
+      <h2>Lee. Identifícate. Firma.</h2>
+      <p class="section-intro">Todo lo que el DNIe sabe hacer, hecho para el Mac: inserta la tarjeta y macDNIe se ocupa del resto.</p>
+
+      <div class="journeys">
+        <article class="journey">
+          <p class="verb">Lee</p>
+          <h3>Tu tarjeta, abierta</h3>
+          <p>Inserta el DNIe en el lector y macDNIe se conecta solo: abre el canal seguro, comprueba tus certificados y, con tu PIN, te muestra tu filiación completa y tu fotografía. Detecta la generación de tu tarjeta (de la 1.0 a la 4.0) y te avisa si algo no está en orden.</p>
+          <span class="spec">FILIACIÓN · FOTOGRAFÍA · CERTIFICADOS</span>
+        </article>
+        <article class="journey">
+          <p class="verb">Identifícate</p>
+          <h3>Todas las sedes, todos los navegadores</h3>
+          <p>Entra con tu DNIe en la Agencia Tributaria, la Seguridad Social o la DGT desde Safari, Chrome y Edge — integración nativa con macOS (CryptoTokenKit) — o desde Firefox, con el módulo PKCS#11 incluido. Y las sedes que piden AutoFirma siguen funcionando: macDNIe es compatible.</p>
+          <span class="spec">SAFARI · CHROME · EDGE · FIREFOX · AUTOFIRMA</span>
+        </article>
+        <article class="journey">
+          <p class="verb">Firma</p>
+          <h3>Documentos firmados, sin Adobe</h3>
+          <p>Firma PDF y cualquier archivo en PAdES, CAdES o XAdES con la cadena de certificados completa, sello de tiempo RFC-3161 y, si quieres, una firma visible con tu logotipo en la primera, la última o todas las páginas. Directamente en la app.</p>
+          <span class="spec">PAdES · CAdES · XAdES · RFC-3161</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── how it works + privacy pledge ── -->
+    <section class="wrap section" id="como-funciona">
+      <p class="eyebrow">Cómo funciona</p>
+      <h2>Todo ocurre en tu Mac.</h2>
+      <p class="section-intro">macDNIe habla con tu tarjeta a través del lector, mediante el canal seguro que define el propio DNIe. No hay servidor de por medio, ni cuenta que crear, ni «nube». Este compromiso también vale para esta web: ni cookies, ni analítica, ni recursos de terceros.</p>
+
+      <dl class="pledges">
+        <div>
+          <dt>Tu PIN</dt>
+          <dd>Viaja cifrado del teclado a la tarjeta, dentro del canal seguro. No se guarda, no se registra, no se envía a ninguna parte.</dd>
+        </div>
+        <div>
+          <dt>Tus datos</dt>
+          <dd>Tu filiación y tu fotografía se leen del chip y se quedan en tu pantalla. Los documentos que firmas se guardan donde tú elijas.</dd>
+        </div>
+        <div>
+          <dt>Telemetría</dt>
+          <dd>Cero. Ni analítica, ni identificadores de dispositivo, ni «estadísticas anónimas de uso». Ni en la app ni en esta web.</dd>
+        </div>
+        <div>
+          <dt>Red</dt>
+          <dd>Las únicas conexiones salientes: OCSP (ocsp.dnie.es) para comprobar que un certificado no está revocado y, solo si activas el sello de tiempo, el servicio TSA. Las compras las procesa Apple. Todo detallado en la <a href="privacidad.html">política de privacidad</a>.</dd>
+        </div>
+      </dl>
+
+      <p class="section-intro" style="margin-top:48px">Y cuando algo se tuerce, también: si tu PIN está bloqueado o tus certificados han caducado, macDNIe no se limita a un error críptico — te dice exactamente <a href="#faq">qué hacer y dónde</a>.</p>
+    </section>
+
+    <!-- ── languages ── -->
+    <section class="wrap section" id="idiomas">
+      <p class="eyebrow">Cuatro lenguas cooficiales</p>
+      <h2>En tu idioma, de verdad.</h2>
+      <p class="section-intro">La interfaz, los diálogos del sistema y las guías de ayuda, traducidas de forma nativa a las cuatro lenguas cooficiales. No como detalle: como principio.</p>
+      <ul class="langstrip">
+        <li><q lang="es">Firmar documento</q><span class="lang">Español</span></li>
+        <li><q lang="ca">Signa el document</q><span class="lang">Català</span></li>
+        <li><q lang="eu">Sinatu dokumentua</q><span class="lang">Euskara</span></li>
+        <li><q lang="gl">Asinar o documento</q><span class="lang">Galego</span></li>
+      </ul>
+    </section>
+
+    <!-- ── pricing ── -->
+    <section class="wrap section" id="precio">
+      <p class="eyebrow">Precio</p>
+      <h2>Un precio que se entiende.</h2>
+      <p class="section-intro">Dos formas de tener macDNIe, ninguna letra pequeña rara. Compra nativa de Apple (In-App Purchase): sin pagos web ni tarjetas en formularios.</p>
+
+      <div class="plans">
+        <div class="plan">
+          <p class="plan-name">Suscripción anual</p>
+          <p class="price">10&nbsp;€<small>/año</small></p>
+          <p>Todas las funciones, todas las actualizaciones. Se renueva automáticamente; cancélala cuando quieras desde los ajustes de la App&nbsp;Store.</p>
+        </div>
+        <div class="plan">
+          <p class="plan-name">Licencia de por vida</p>
+          <p class="price">150&nbsp;€<small>&nbsp;una vez</small></p>
+          <p>Un solo pago y macDNIe es tuyo para siempre, con todas las funciones. Sin renovaciones, sin sorpresas.</p>
+        </div>
+      </div>
+      <p class="plans-foot">La suscripción anual se renueva automáticamente salvo que la canceles al menos 24&nbsp;horas antes del fin del periodo; se gestiona desde los ajustes de la App&nbsp;Store. «Restaurar compras» está siempre disponible en la app. Condiciones en las <a href="condiciones.html">condiciones de uso</a>.</p>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="wrap section" id="faq">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2>Lo que conviene saber.</h2>
+
+      <div class="faq">
+        <details>
+          <summary>¿Es una aplicación oficial?</summary>
+          <div class="answer">
+            <p><strong>No, y lo decimos en cada pantalla.</strong> macDNIe es un producto independiente de nexoapex. No está afiliado ni respaldado por la Dirección General de la Policía, el Ministerio del Interior ni el Gobierno de España.</p>
+            <p>¿Qué significa en la práctica? Tu DNIe y sus certificados sí son oficiales — los emite la Policía —, y las firmas que produces siguen los estándares europeos (PAdES, CAdES, XAdES), los mismos que usa AutoFirma. macDNIe es la herramienta con la que los usas en tu Mac, igual que un lector de PDF no es «del BOE» por abrir el BOE.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Mi PIN está bloqueado. ¿Qué hago?</summary>
+          <div class="answer">
+            <p>Tras 3 intentos fallidos el DNIe se bloquea, y no existe PUK: la única forma de establecer un PIN nuevo es presencial. La buena noticia: no necesitas cita previa.</p>
+            <ol>
+              <li>Acude a una Oficina de Expedición del DNIe (comisaría) con tu tarjeta.</li>
+              <li>Usa un Punto de Actualización del DNIe (PAD): son quioscos de autoservicio.</li>
+              <li>Identifícate con tu huella dactilar y establece el PIN nuevo. Gratis.</li>
+            </ol>
+            <p>No se puede desbloquear por Internet ni por teléfono. macDNIe detecta el bloqueo y te muestra esta misma guía dentro de la app. Información oficial en <a href="https://www.dnielectronico.es/PortalDNIe/" rel="noopener">dnielectronico.es</a>.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Mis certificados han caducado. ¿La tarjeta ya no sirve?</summary>
+          <div class="answer">
+            <p>La tarjeta sí sirve: los certificados del DNIe caducan cada ~2 años, antes que el documento físico. Con ellos caducados puedes seguir leyendo tus datos, pero ninguna sede te dejará identificarte ni firmar.</p>
+            <p>Renovarlos es gratis y sin cita: en un Punto de Actualización del DNIe (PAD) de cualquier Oficina de Expedición (comisaría), con tu huella dactilar, se generan certificados nuevos en la misma tarjeta. No existe renovación por Internet. macDNIe te avisa de la caducidad al leer la tarjeta. Detalles en <a href="https://www.dnielectronico.es/PortalDNIe/" rel="noopener">dnielectronico.es</a>. Si el documento físico es el que ha vencido, pide cita en <a href="https://www.citapreviadnie.es/" rel="noopener">citapreviadnie.es</a>.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Funciona con mi DNIe? (generaciones 1.0 a 4.0)</summary>
+          <div class="answer">
+            <p>macDNIe funciona con un lector de tarjetas de contacto (USB, tipo CCID) y detecta automáticamente la generación de tu DNIe.</p>
+            <ul>
+              <li><strong>DNIe 1.0 y 2.0</strong>: son tarjetas «solo contacto» — no tienen NFC, así que el lector es su única vía. macDNIe las identifica y te lo indica.</li>
+              <li><strong>DNIe 3.0 y 4.0</strong>: además del contacto incorporan NFC (el chip sin contacto que usa, por ejemplo, la app oficial MiDNI en el móvil). Con macDNIe se usan por el lector, igual que las demás.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Y AutoFirma? ¿Y Firefox?</summary>
+          <div class="answer">
+            <p>Las sedes que exigen <a href="https://firmaelectronica.gob.es/" rel="noopener">AutoFirma</a> siguen funcionando: macDNIe es interoperable con ella, no la sustituye a la fuerza.</p>
+            <p>En Safari, Chrome y Edge la identificación va por la integración nativa de macOS (CryptoTokenKit): el certificado de tu DNIe aparece en el propio diálogo del navegador. Firefox no usa esa integración, así que macDNIe incluye un módulo PKCS#11 propio — disponible en la versión de descarga directa — para que también puedas identificarte desde Firefox.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Qué necesito para empezar?</summary>
+          <div class="answer">
+            <p>Un Mac con macOS 13 o posterior (Intel o Apple Silicon), un lector de tarjetas USB de contacto, tu DNIe y tu PIN. Nada más: ni Java, ni configuraciones de sistema, ni perfiles raros.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ── download ── -->
+    <section class="wrap section download" id="descargar">
+      <p class="eyebrow">Descarga</p>
+      <h2>Llévatelo al Mac.</h2>
+      <div class="cta-row">
+        <!-- En revisión en el Mac App Store. TODO: sustituir por el badge oficial (enlazado) cuando se apruebe. -->
+        <span class="btn btn-appstore btn-review" role="note" aria-describedby="descarga-nota" aria-label="Próximamente en el Mac App Store; en revisión, aún no disponible">
+          <span class="two-line"><small>Próximamente en el</small> Mac App Store</span>
+          <span class="review-pill">En revisión</span>
+        </span>
+      </div>
+      <p class="direct">¿Usas Firefox? Además de la versión del App&nbsp;Store habrá una <strong>descarga directa</strong> (firmada y notarizada con Developer&nbsp;ID) que incluye el módulo PKCS#11 para Firefox.</p>
+      <p class="todo-note" id="descarga-nota">En revisión por Apple · aún no disponible para descargar. ¿Quieres que te avisemos cuando se publique? <a href="mailto:david@nexoapex.com?subject=macDNIe%20—%20av%C3%ADsame">Escríbenos</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p class="disclaimer"><strong>Producto no oficial.</strong> macDNIe no está afiliado ni respaldado por la Dirección General de la Policía, el Ministerio del Interior ni el Gobierno de España. «DNIe» designa el Documento Nacional de Identidad electrónico, expedido por la Dirección General de la Policía. Todo el tratamiento del DNIe ocurre en tu dispositivo; no se transmite ningún dato personal.</p>
+      <ul class="foot-nav">
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+        <li><a href="condiciones.html">Condiciones de uso</a></li>
+        <li><a href="mailto:david@nexoapex.com">david@nexoapex.com</a></li>
+        <li><a href="en/index.html" hreflang="en" lang="en">English</a></li>
+      </ul>
+      <p class="foot-meta">© 2026 nexoapex · macdnie.com · sin cookies, sin analítica, sin rastreadores</p>
+    </div>
+  </footer>
+</body>
+</html>
