@@ -78,7 +78,14 @@
       },
       "description": "Unofficial Spanish DNIe reader and signer for macOS: reads your data and photo, signs you in to e-government sites from Safari, Chrome, Edge and Firefox, and signs PAdES, CAdES and XAdES documents with a timestamp. All processing happens on your device.",
       "datePublished": "2026-07-13",
-      "dateModified": "2026-07-13"
+      "dateModified": "2026-07-13",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".lede"
+        ]
+      }
     },
     {
       "@type": "SoftwareApplication",
@@ -131,7 +138,8 @@
         }
       ],
       "datePublished": "2026-07-13",
-      "dateModified": "2026-07-13"
+      "dateModified": "2026-07-13",
+      "isAccessibleForFree": false
     },
     {
       "@type": "FAQPage",
@@ -185,6 +193,33 @@
             "@type": "Answer",
             "text": "A Mac with macOS 13 or later (Intel or Apple Silicon), a USB contact card reader, your DNIe and your PIN. Nothing else: no Java, no system configuration, no profiles."
           }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://macdnie.com/en/#howto-unblock-pin",
+      "name": "How to unblock a DNIe PIN",
+      "inLanguage": "en",
+      "description": "The DNIe has no PUK: a blocked PIN can only be reset in person at a DNIe Update Point (PAD), with no appointment.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Go to a DNIe issuing office",
+          "text": "Visit a police station with a DNIe issuing office (Oficina de Expedición del DNIe), bringing your card."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Use a DNIe Update Point (PAD)",
+          "text": "PADs are self-service kiosks; no appointment is needed."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Identify with your fingerprint and set a new PIN",
+          "text": "Verify your identity with your fingerprint and set a new PIN. It is free. It cannot be done online or by phone."
         }
       ]
     }

@@ -23,5 +23,8 @@
 - [Privacy policy](https://macdnie.com/privacidad.html) — [Privacy policy (English)](https://macdnie.com/en/privacy.html)
 - [Terms of use](https://macdnie.com/condiciones.html) — [Terms of use (English)](https://macdnie.com/en/terms.html)
 
+## Optional
+- [Full content in one file](https://macdnie.com/llms-full.txt): the complete site content for ingestion.
+
 ## Contact
 - Email: macdnie@nexoapex.com

@@ -20,3 +20,12 @@
 
 /favicon.ico
   Cache-Control: public, max-age=604800
+
+# GEO artifacts — correct content type + a day's cache.
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=86400
+
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=86400

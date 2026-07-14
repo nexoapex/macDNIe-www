@@ -78,7 +78,14 @@
       },
       "description": "Lector y firmador no oficial del DNIe para macOS: lectura de datos y fotografía, identificación en sedes electrónicas desde Safari, Chrome, Edge y Firefox, y firma PAdES, CAdES y XAdES con sello de tiempo. Todo el tratamiento ocurre en el dispositivo.",
       "datePublished": "2026-07-13",
-      "dateModified": "2026-07-13"
+      "dateModified": "2026-07-13",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".lede"
+        ]
+      }
     },
     {
       "@type": "SoftwareApplication",
@@ -131,7 +138,8 @@
         }
       ],
       "datePublished": "2026-07-13",
-      "dateModified": "2026-07-13"
+      "dateModified": "2026-07-13",
+      "isAccessibleForFree": false
     },
     {
       "@type": "FAQPage",
@@ -185,6 +193,33 @@
             "@type": "Answer",
             "text": "Un Mac con macOS 13 o posterior (Intel o Apple Silicon), un lector de tarjetas USB de contacto, tu DNIe y tu PIN. Nada más: ni Java, ni configuraciones de sistema, ni perfiles."
           }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://macdnie.com/#howto-unblock-pin",
+      "name": "Cómo desbloquear el PIN del DNIe",
+      "inLanguage": "es",
+      "description": "El DNIe no tiene PUK: un PIN bloqueado solo se restablece en persona, en un Punto de Actualización del DNIe (PAD), sin cita previa.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Acude a una Oficina de Expedición del DNIe",
+          "text": "Ve a una comisaría con Oficina de Expedición del DNIe, con tu tarjeta."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Usa un Punto de Actualización del DNIe (PAD)",
+          "text": "Los PAD son quioscos de autoservicio; no necesitas cita previa."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Identifícate con tu huella y establece un PIN nuevo",
+          "text": "Verifica tu identidad con la huella dactilar y define un PIN nuevo. Es gratis. No se puede hacer por Internet ni por teléfono."
         }
       ]
     }
