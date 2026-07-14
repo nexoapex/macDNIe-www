@@ -14,12 +14,13 @@
   --sink:      #dcdcd5;
   --ink:       #191b1f;
   --ink-soft:  #5c5f66;
-  --ink-faint: #8a8d93;
+  --ink-faint: #616469;
   --line:      #cfcfc7;
   --gold:      #9c7616;
+  --gold-text: #816010;   /* AA-compliant gold for small text (4.68:1 on --bg) */
   --gold-ink:  #fbf7ec;
-  --ok:        #2f7d54;
-  --warn:      #9a6a12;
+  --ok:        #2a6e47;
+  --warn:      #7a5610;
   --err:       #b23b26;
   --gold-glow: color-mix(in srgb, var(--gold) 22%, transparent);
   --shadow:    0 20px 60px rgba(24, 20, 8, 0.16);
@@ -33,9 +34,10 @@
     --sink:      #0d0f13;
     --ink:       #e8e5da;
     --ink-soft:  #9a9c9f;
-    --ink-faint: #63666c;
+    --ink-faint: #7c8087;
     --line:      #2a2e36;
     --gold:      #d7a637;
+    --gold-text: #d7a637;   /* passes 8.25:1 on dark --bg */
     --gold-ink:  #17130a;
     --ok:        #4fb07f;
     --warn:      #d3a34a;
@@ -89,20 +91,20 @@ a { color: inherit; }
 }
 .brand svg { width: 34px; height: 34px; flex-shrink: 0; }
 .brand b { font-weight: 700; }
-.brand b span { color: var(--gold); }
+.brand b span { color: var(--gold-text); }
 .site-nav { display: flex; align-items: center; gap: clamp(14px, 2.4vw, 26px); }
 .site-nav a {
   text-decoration: none; color: var(--ink-soft);
   font-size: 14px; font-weight: 560;
 }
-.site-nav a:hover { color: var(--gold); }
+.site-nav a:hover { color: var(--gold-text); }
 .lang-switch {
   font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.1em;
   color: var(--ink-soft);
   border: 1px solid var(--line); border-radius: 6px;
   padding: 5px 9px; text-decoration: none;
 }
-.lang-switch:hover { color: var(--gold); border-color: var(--gold); }
+.lang-switch:hover { color: var(--gold-text); border-color: var(--gold-text); }
 .nav-cta {
   background: var(--gold); color: var(--gold-ink) !important;
   padding: 8px 15px; border-radius: 8px; font-weight: 640;
@@ -143,7 +145,7 @@ a { color: inherit; }
 .btn-gold { background: var(--gold); color: var(--gold-ink); }
 .btn-gold:hover { box-shadow: 0 0 0 5px var(--gold-glow); }
 .btn-ghost { border-color: var(--line); color: var(--ink); background: transparent; }
-.btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+.btn-ghost:hover { border-color: var(--gold-text); color: var(--gold-text); }
 .btn-appstore small {
   display: block; font-size: 10.5px; font-weight: 500; letter-spacing: 0.04em;
   opacity: 0.85; margin-bottom: 1px;
@@ -207,7 +209,7 @@ a { color: inherit; }
 }
 .transcript .ln { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .transcript .ok { color: var(--ok); }
-.transcript .sw { color: var(--gold); }
+.transcript .sw { color: var(--gold-text); }
 .transcript .caret {
   display: inline-block; width: 0.55ch; height: 1em;
   background: var(--gold); vertical-align: text-bottom; margin-left: 2px;
@@ -234,8 +236,8 @@ a { color: inherit; }
   margin: 14px 0 12px; text-wrap: balance;
 }
 .section-intro { color: var(--ink-soft); max-width: 44em; margin: 0; font-size: 16.5px; }
-.section-intro a, .journey a, .pledges a, .faq a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: 3px; }
-.section-intro a:hover, .journey a:hover, .pledges a:hover, .faq a:hover { color: var(--gold); }
+.section-intro a, .journey a, .pledges a, .faq a { color: var(--ink); text-decoration-color: var(--gold-text); text-underline-offset: 3px; }
+.section-intro a:hover, .journey a:hover, .pledges a:hover, .faq a:hover { color: var(--gold-text); }
 
 /* ── the three journeys ── */
 .journeys { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 52px; }
@@ -244,7 +246,7 @@ a { color: inherit; }
 .journey:last-child { padding-right: 0; }
 .journey .verb {
   font-family: var(--mono); font-size: 12px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold);
+  text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold-text);
 }
 .journey h3 { font-size: 21px; font-weight: 680; letter-spacing: -0.018em; margin: 10px 0 10px; }
 .journey p { color: var(--ink-soft); font-size: 15.5px; line-height: 1.66; margin: 0; }
@@ -268,7 +270,7 @@ a { color: inherit; }
 .pledges > div { min-width: 0; }
 .pledges dt {
   font-family: var(--mono); font-size: 11.5px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: 0.16em; color: var(--gold);
+  text-transform: uppercase; letter-spacing: 0.16em; color: var(--gold-text);
 }
 .pledges dd { margin: 9px 0 0; color: var(--ink-soft); font-size: 15.5px; line-height: 1.65; }
 @media (max-width: 700px) { .pledges { grid-template-columns: 1fr; gap: 30px; } }
@@ -299,7 +301,7 @@ a { color: inherit; }
 .plan + .plan { border-left: 1px solid var(--line); }
 .plan-name {
   font-family: var(--mono); font-size: 11.5px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: 0.16em; color: var(--gold); margin: 0;
+  text-transform: uppercase; letter-spacing: 0.16em; color: var(--gold-text); margin: 0;
 }
 .price {
   font-family: var(--mono); font-size: clamp(34px, 4vw, 46px); font-weight: 600;
@@ -325,7 +327,7 @@ a { color: inherit; }
 .faq summary::-webkit-details-marker { display: none; }
 .faq summary::after {
   content: "+"; font-family: var(--mono); font-size: 18px;
-  color: var(--gold); flex-shrink: 0;
+  color: var(--gold-text); flex-shrink: 0;
 }
 .faq details[open] summary::after { content: "−"; }
 .faq .answer { padding: 0 0 26px; color: var(--ink-soft); max-width: 58em; }
@@ -356,7 +358,7 @@ a { color: inherit; }
   font-size: 13.5px;
 }
 .foot-nav a { color: var(--ink-soft); text-decoration: none; }
-.foot-nav a:hover { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+.foot-nav a:hover { color: var(--gold-text); text-decoration: underline; text-underline-offset: 3px; }
 .foot-meta { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; color: var(--ink-faint); margin-top: 22px; }
 
 /* ── legal prose pages ── */
@@ -364,11 +366,11 @@ a { color: inherit; }
 .prose h1 { font-size: clamp(30px, 4vw, 42px); font-weight: 730; letter-spacing: -0.028em; line-height: 1.08; margin: 12px 0 10px; }
 .prose .updated { font-family: var(--mono); font-size: 12.5px; color: var(--ink-faint); letter-spacing: 0.06em; }
 .prose h2 { font-size: 21px; font-weight: 680; letter-spacing: -0.015em; margin: 44px 0 10px; }
-.prose h2 .n { font-family: var(--mono); font-size: 14px; color: var(--gold); font-weight: 600; margin-right: 10px; }
+.prose h2 .n { font-family: var(--mono); font-size: 14px; color: var(--gold-text); font-weight: 600; margin-right: 10px; }
 .prose p, .prose li { color: var(--ink-soft); font-size: 15.5px; line-height: 1.7; }
 .prose strong { color: var(--ink); }
-.prose a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: 3px; }
-.prose a:hover { color: var(--gold); }
+.prose a { color: var(--ink); text-decoration-color: var(--gold-text); text-underline-offset: 3px; }
+.prose a:hover { color: var(--gold-text); }
 .prose ul, .prose ol { padding-left: 24px; }
 .prose li { margin-bottom: 8px; }
 .prose .lead { font-size: 17px; color: var(--ink-soft); }
@@ -379,7 +381,7 @@ a { color: inherit; }
 }
 .prose dl.controller dt {
   font-family: var(--mono); font-size: 11px; text-transform: uppercase;
-  letter-spacing: 0.14em; color: var(--gold); align-self: baseline; padding-top: 4px;
+  letter-spacing: 0.14em; color: var(--gold-text); align-self: baseline; padding-top: 4px;
 }
 .prose dl.controller dd { margin: 0; color: var(--ink-soft); font-size: 15px; }
 @media (max-width: 520px) { .prose dl.controller { grid-template-columns: 1fr; gap: 2px; } .prose dl.controller dd { margin-bottom: 12px; } }
@@ -393,7 +395,7 @@ a { color: inherit; }
   font-family: var(--mono); font-size: clamp(56px, 10vw, 96px); font-weight: 600;
   letter-spacing: -0.02em; margin: 18px 0 4px; line-height: 1;
 }
-.notfound .sw { color: var(--gold); font-family: var(--mono); font-size: 13px; letter-spacing: 0.14em; }
+.notfound .sw { color: var(--gold-text); font-family: var(--mono); font-size: 13px; letter-spacing: 0.14em; }
 .notfound p { color: var(--ink-soft); max-width: 34em; margin: 10px auto 26px; }
 .notfound svg { width: 56px; height: 56px; margin-inline: auto; }
 

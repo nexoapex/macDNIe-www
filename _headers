@@ -1,5 +1,6 @@
 # Security + caching headers for Netlify / Cloudflare Pages.
 # (Other hosts: replicate via vercel.json, .htaccess, nginx, etc.)
+# All resources are same-origin; JSON-LD is non-executable data (exempt from script-src).
 
 /*
   X-Content-Type-Options: nosniff
@@ -7,9 +8,10 @@
   X-Frame-Options: DENY
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=(), interest-cohort=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  Cache-Control: public, max-age=3600, must-revalidate
 
-# Static assets change rarely, but filenames are not content-hashed → cache a week.
+# Static assets (filenames not content-hashed) — cache a week, override the default above.
 /assets/*
   Cache-Control: public, max-age=604800
 
@@ -18,19 +20,3 @@
 
 /favicon.ico
   Cache-Control: public, max-age=604800
-
-# HTML must revalidate quickly so content/meta updates propagate.
-/*.html
-  Cache-Control: public, max-age=3600, must-revalidate
-
-/site.webmanifest
-  Cache-Control: public, max-age=86400
-
-/robots.txt
-  Cache-Control: public, max-age=86400
-
-/sitemap.xml
-  Cache-Control: public, max-age=86400
-
-/llms.txt
-  Cache-Control: public, max-age=86400

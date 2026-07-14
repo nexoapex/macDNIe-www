@@ -6,7 +6,8 @@
 - Reads the DNIe's personal data and photo, entirely on-device.
 - Signs you in to Spanish e-government sites (sedes electrónicas) from Safari, Chrome, Edge and Firefox.
 - Signs documents in PAdES (PDF), CAdES and XAdES formats, with an RFC-3161 timestamp; also validates already-signed documents.
-- Interoperates with AutoFirma through a bundled PKCS#11 module (it complements AutoFirma, it does not replace it by force).
+- Interoperable with AutoFirma: it complements AutoFirma and does not replace it by force.
+- Sign-in uses macOS's native integration (CryptoTokenKit) in Safari, Chrome and Edge; for Firefox, macDNIe includes its own PKCS#11 module in the direct-download edition (not the App Store build).
 
 ## Key facts
 - Requires macOS 13 or later (Intel or Apple Silicon) and a USB contact card reader (CCID). DNIe 3.0/4.0 add NFC but are used through the reader.
