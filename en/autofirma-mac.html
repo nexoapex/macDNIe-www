@@ -10,6 +10,9 @@
   <link rel="canonical" href="https://macdnie.com/en/autofirma-mac.html">
   <link rel="alternate" hreflang="es" href="https://macdnie.com/autofirma-mac.html">
   <link rel="alternate" hreflang="en" href="https://macdnie.com/en/autofirma-mac.html">
+  <link rel="alternate" hreflang="ca" href="https://macdnie.com/ca/autofirma-mac.html">
+  <link rel="alternate" hreflang="eu" href="https://macdnie.com/eu/autofirma-mac.html">
+  <link rel="alternate" hreflang="gl" href="https://macdnie.com/gl/autofirma-mac.html">
   <link rel="alternate" hreflang="x-default" href="https://macdnie.com/autofirma-mac.html">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://macdnie.com/en/autofirma-mac.html">
@@ -23,6 +26,9 @@
   <meta property="og:image:alt" content="macDNIe — Spanish DNIe reader and signer for macOS">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="ca_ES">
+  <meta property="og:locale:alternate" content="eu_ES">
+  <meta property="og:locale:alternate" content="gl_ES">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://macdnie.com/og.png">
   <meta name="twitter:image:alt" content="macDNIe — Spanish DNIe reader and signer for macOS">
@@ -162,7 +168,15 @@
       <a class="nav-link" href="index.html#features">Features</a>
       <a class="nav-link" href="index.html#pricing">Pricing</a>
       <a class="nav-link" href="index.html#faq">FAQ</a>
-      <a class="lang-switch" href="../autofirma-mac.html" hreflang="es" lang="es" aria-label="Leer esta página en español">ES</a>
+      <details class="lang-menu">
+        <summary aria-label="Change language">EN</summary>
+        <div class="lang-menu-list">
+          <a href="../autofirma-mac.html" hreflang="es" lang="es">Español</a>
+          <a href="../ca/autofirma-mac.html" hreflang="ca" lang="ca">Català</a>
+          <a href="../eu/autofirma-mac.html" hreflang="eu" lang="eu">Euskara</a>
+          <a href="../gl/autofirma-mac.html" hreflang="gl" lang="gl">Galego</a>
+        </div>
+      </details>
       <a class="nav-cta" href="index.html#download">Download</a>
     </nav>
   </header>
@@ -209,9 +223,9 @@
     <p>Not for macDNIe: it's a native macOS application, with no Java, no system configuration and no profiles. You only need macOS 13 or later (Intel or Apple Silicon), a USB contact card reader, your DNIe and your PIN.</p>
 
     <h2>What about Firefox?</h2>
-    <p>Firefox doesn't use the native macOS integration (CryptoTokenKit) that Safari, Chrome and Edge rely on. That's why macDNIe ships its own <a href="glossary.html#pkcs11">PKCS#11 module</a>, available in the direct-download edition, so your DNIe certificate shows up in Firefox too.</p>
+    <p>Firefox doesn't use the native macOS integration (CryptoTokenKit) that Safari, Chrome and Edge rely on. That's why macDNIe ships its own <a href="dnie-glossary.html#pkcs11">PKCS#11 module</a>, available in the direct-download edition, so your DNIe certificate shows up in Firefox too.</p>
 
-    <p>More on <a href="index.html#features">what macDNIe does</a> or how to <a href="index.html#download">get it</a>. If you're looking for help with a blocked PIN or an expired certificate, see the <a href="blocked-pin.html">blocked or expired PIN</a> guide.</p>
+    <p>More on <a href="index.html#features">what macDNIe does</a> or how to <a href="index.html#download">get it</a>. If you're looking for help with a blocked PIN or an expired certificate, see the <a href="dnie-pin-blocked.html">blocked or expired PIN</a> guide.</p>
 
     <div class="faq">
       <details>
@@ -247,11 +261,14 @@
       <ul class="foot-nav">
         <li><a href="privacy.html">Privacy policy</a></li>
         <li><a href="terms.html">Terms of use</a></li>
-        <li><a href="blocked-pin.html">Blocked or expired PIN</a></li>
+        <li><a href="dnie-pin-blocked.html">Blocked or expired PIN</a></li>
         <li><a href="autofirma-mac.html">AutoFirma on Mac</a></li>
-        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="dnie-glossary.html">Glossary</a></li>
         <li><a href="mailto:macdnie@nexoapex.com">macdnie@nexoapex.com</a></li>
         <li><a href="../autofirma-mac.html" hreflang="es" lang="es">Español</a></li>
+        <li><a href="../ca/autofirma-mac.html" hreflang="ca" lang="ca">Català</a></li>
+        <li><a href="../eu/autofirma-mac.html" hreflang="eu" lang="eu">Euskara</a></li>
+        <li><a href="../gl/autofirma-mac.html" hreflang="gl" lang="gl">Galego</a></li>
       </ul>
       <p class="foot-meta">© 2026 nexoapex · macdnie.com · no cookies, no analytics, no trackers</p>
     </div>

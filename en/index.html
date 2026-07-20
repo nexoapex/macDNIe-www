@@ -10,6 +10,9 @@
   <link rel="canonical" href="https://macdnie.com/en/">
   <link rel="alternate" hreflang="es" href="https://macdnie.com/">
   <link rel="alternate" hreflang="en" href="https://macdnie.com/en/">
+  <link rel="alternate" hreflang="ca" href="https://macdnie.com/ca/">
+  <link rel="alternate" hreflang="eu" href="https://macdnie.com/eu/">
+  <link rel="alternate" hreflang="gl" href="https://macdnie.com/gl/">
   <link rel="alternate" hreflang="x-default" href="https://macdnie.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://macdnie.com/en/">
@@ -25,6 +28,9 @@
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="ca_ES">
+  <meta property="og:locale:alternate" content="eu_ES">
+  <meta property="og:locale:alternate" content="gl_ES">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e7e7e2">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121419">
@@ -131,7 +137,7 @@
           "price": "10.00",
           "priceCurrency": "EUR",
           "availability": "https://schema.org/PreOrder",
-          "url": "https://macdnie.com/#download",
+          "url": "https://macdnie.com/en/#download",
           "category": "subscription"
         },
         {
@@ -140,7 +146,7 @@
           "price": "150.00",
           "priceCurrency": "EUR",
           "availability": "https://schema.org/PreOrder",
-          "url": "https://macdnie.com/#download"
+          "url": "https://macdnie.com/en/#download"
         }
       ],
       "datePublished": "2026-07-13",
@@ -258,7 +264,15 @@
       <a class="nav-link" href="#how-it-works">Privacy</a>
       <a class="nav-link" href="#pricing">Pricing</a>
       <a class="nav-link" href="#faq">FAQ</a>
-      <a class="lang-switch" href="../index.html" hreflang="es" lang="es" aria-label="Leer esta página en español">ES</a>
+      <details class="lang-menu">
+        <summary aria-label="Change language">EN</summary>
+        <div class="lang-menu-list">
+          <a href="../" hreflang="es" lang="es">Español</a>
+          <a href="../ca/" hreflang="ca" lang="ca">Català</a>
+          <a href="../eu/" hreflang="eu" lang="eu">Euskara</a>
+          <a href="../gl/" hreflang="gl" lang="gl">Galego</a>
+        </div>
+      </details>
       <a class="nav-cta" href="#download">Download</a>
     </nav>
   </header>
@@ -418,7 +432,7 @@
               <li>Use a DNIe update kiosk (PAD — Punto de Actualización del DNIe): they are self-service.</li>
               <li>Identify yourself with your fingerprint and set a new PIN. Free of charge.</li>
             </ol>
-            <p>It cannot be unblocked over the Internet or by phone. macDNIe detects the blocked state and shows you this same guidance inside the app. Official information at <a href="https://www.dnielectronico.es/PortalDNIe/" rel="noopener">dnielectronico.es</a>. Full guide: <a href="blocked-pin.html">blocked or expired PIN</a>.</p>
+            <p>It cannot be unblocked over the Internet or by phone. macDNIe detects the blocked state and shows you this same guidance inside the app. Official information at <a href="https://www.dnielectronico.es/PortalDNIe/" rel="noopener">dnielectronico.es</a>. Full guide: <a href="dnie-pin-blocked.html">blocked or expired PIN</a>.</p>
           </div>
         </details>
 
@@ -426,7 +440,7 @@
           <summary>My certificates have expired. Is the card useless now?</summary>
           <div class="answer">
             <p>The card still works: DNIe certificates expire roughly every 2 years, before the physical document does. With expired certificates you can still read your data, but no portal will let you log in or sign.</p>
-            <p>Renewing them is free and needs no appointment: at a DNIe update kiosk (PAD) in any issuing office (police station), your fingerprint generates fresh certificates onto the same card. There is no online renewal. macDNIe warns you about expiry when it reads the card. Details at <a href="https://www.dnielectronico.es/PortalDNIe/" rel="noopener">dnielectronico.es</a>. If the physical document itself has expired, book an appointment at <a href="https://www.citapreviadnie.es/" rel="noopener">citapreviadnie.es</a>. Full guide: <a href="blocked-pin.html">blocked or expired PIN</a>.</p>
+            <p>Renewing them is free and needs no appointment: at a DNIe update kiosk (PAD) in any issuing office (police station), your fingerprint generates fresh certificates onto the same card. There is no online renewal. macDNIe warns you about expiry when it reads the card. Details at <a href="https://www.dnielectronico.es/PortalDNIe/" rel="noopener">dnielectronico.es</a>. If the physical document itself has expired, book an appointment at <a href="https://www.citapreviadnie.es/" rel="noopener">citapreviadnie.es</a>. Full guide: <a href="dnie-pin-blocked.html">blocked or expired PIN</a>.</p>
           </div>
         </details>
 
@@ -480,11 +494,14 @@
       <ul class="foot-nav">
         <li><a href="privacy.html">Privacy policy</a></li>
         <li><a href="terms.html">Terms of use</a></li>
-        <li><a href="blocked-pin.html">Blocked or expired PIN</a></li>
+        <li><a href="dnie-pin-blocked.html">Blocked or expired PIN</a></li>
         <li><a href="autofirma-mac.html">AutoFirma on Mac</a></li>
-        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="dnie-glossary.html">Glossary</a></li>
         <li><a href="mailto:macdnie@nexoapex.com">macdnie@nexoapex.com</a></li>
-        <li><a href="../index.html" hreflang="es" lang="es">Español</a></li>
+        <li><a href="../" hreflang="es" lang="es">Español</a></li>
+        <li><a href="../ca/" hreflang="ca" lang="ca">Català</a></li>
+        <li><a href="../eu/" hreflang="eu" lang="eu">Euskara</a></li>
+        <li><a href="../gl/" hreflang="gl" lang="gl">Galego</a></li>
       </ul>
       <p class="foot-meta">© 2026 nexoapex · macdnie.com · no cookies, no analytics, no trackers</p>
     </div>

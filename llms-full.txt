@@ -1,6 +1,6 @@
 # macDNIe — full reference for AI answer engines
 
-> macDNIe is an unofficial macOS app to read, authenticate with, and sign documents using the Spanish electronic national ID card (DNIe / Documento Nacional de Identidad electrónico). All processing happens on-device — the PIN and personal data never leave the Mac. Interface in Spanish, Catalan, Basque and Galician. Publisher: nexoapex (macdnie@nexoapex.com). It is not affiliated with or endorsed by the Spanish government. This is the full-content companion to https://macdnie.com/llms.txt.
+> macDNIe is an unofficial macOS app to read, authenticate with, and sign documents using the Spanish electronic national ID card (DNIe / Documento Nacional de Identidad electrónico). All processing happens on-device — the PIN and personal data never leave the Mac. The app's interface is in Spanish, Catalan, Basque and Galician; this website (macdnie.com) is published in all five languages — Spanish (root), English (/en/), Catalan (/ca/), Basque (/eu/), Galician (/gl/). Publisher: nexoapex (macdnie@nexoapex.com). It is not affiliated with or endorsed by the Spanish government. This is the full-content companion to https://macdnie.com/llms.txt.
 
 ## What macDNIe is
 macDNIe is a native macOS application (macOS 13 or later, Intel or Apple Silicon) that lets you use the Spanish DNIe directly on a Mac: read its data, sign in to government websites, and sign documents. It uses a USB contact card reader (CCID) and needs your DNIe and your PIN — no Java, no system configuration, no special profiles.
@@ -29,7 +29,7 @@ After 3 consecutive wrong PIN entries the DNIe blocks. The DNIe has no PUK. The 
 1. Go to a DNIe issuing office (Oficina de Expedición del DNIe, in a police station) with your card.
 2. Use a DNIe Update Point (Punto de Actualización del DNIe, "PAD") — a self-service kiosk.
 3. Identify yourself with your fingerprint and set a new PIN. It is free.
-It cannot be done online, by phone, or through the MiDNI app. macDNIe detects the blocked state and shows this guidance in-app. Full guide: https://macdnie.com/pin-bloqueado.html (English: https://macdnie.com/en/blocked-pin.html).
+It cannot be done online, by phone, or through the MiDNI app. macDNIe detects the blocked state and shows this guidance in-app. Full guide: https://macdnie.com/pin-bloqueado.html (English: https://macdnie.com/en/dnie-pin-blocked.html).
 
 ## Expired certificates
 DNIe certificates are valid for about 2 years — they expire before the physical card. With expired certificates you can still read your data, but you cannot sign in or sign. Renewing is free and needs no appointment, at a DNIe Update Point (PAD) in a police issuing office, with your fingerprint; new certificates are generated on the same card. There is no online renewal. macDNIe warns you of expiry when it reads the card.
@@ -51,7 +51,7 @@ DNIe certificates are valid for about 2 years — they expire before the physica
 - CryptoTokenKit: macOS framework letting Safari, Chrome and Edge natively recognize a smart card's certificates in the browser's own dialog.
 - PAD (Punto de Actualización del DNIe): self-service kiosk in DNIe issuing offices for unblocking a PIN or renewing certificates via fingerprint, free, no appointment.
 - Sede electrónica: the official online portal of a Spanish public body where legally valid administrative procedures are completed, usually requiring a digital certificate.
-Full glossary: https://macdnie.com/glosario.html (English: https://macdnie.com/en/glossary.html).
+Full glossary: https://macdnie.com/glosario.html (English: https://macdnie.com/en/dnie-glossary.html).
 
 ## Pricing
 - €10 per year (annual subscription), or
@@ -59,7 +59,7 @@ Full glossary: https://macdnie.com/glosario.html (English: https://macdnie.com/e
 Both via native Apple In-App Purchase. Status: in review on the Mac App Store; not yet available to download.
 
 ## Languages
-The interface is available in the four co-official languages of Spain: Spanish (español), Catalan (català), Basque (euskara) and Galician (galego).
+The app's interface is available in the four co-official languages of Spain: Spanish (español), Catalan (català), Basque (euskara) and Galician (galego). The website (macdnie.com) is published in those four languages plus English, at the paths listed under Pages below.
 
 ## Frequently asked questions
 Q: Is macDNIe an official app?
@@ -81,13 +81,14 @@ Q: What do I need to get started?
 A: A Mac with macOS 13 or later (Intel or Apple Silicon), a USB contact card reader, your DNIe and your PIN. Nothing else — no Java, no system configuration, no profiles.
 
 ## Pages
-- Home (Spanish): https://macdnie.com/
-- Home (English): https://macdnie.com/en/
-- Privacy policy: https://macdnie.com/privacidad.html — English: https://macdnie.com/en/privacy.html
-- Terms of use: https://macdnie.com/condiciones.html — English: https://macdnie.com/en/terms.html
-- Blocked PIN / expired certificate guide: https://macdnie.com/pin-bloqueado.html — English: https://macdnie.com/en/blocked-pin.html
-- AutoFirma on Mac: https://macdnie.com/autofirma-mac.html — English: https://macdnie.com/en/autofirma-mac.html
-- Glossary: https://macdnie.com/glosario.html — English: https://macdnie.com/en/glossary.html
+Each page is published in es (language of record), en, ca, eu, gl.
+
+- Home: https://macdnie.com/ · https://macdnie.com/en/ · https://macdnie.com/ca/ · https://macdnie.com/eu/ · https://macdnie.com/gl/
+- Privacy policy: https://macdnie.com/privacidad.html · https://macdnie.com/en/privacy.html · https://macdnie.com/ca/privadesa.html · https://macdnie.com/eu/pribatutasun-politika.html · https://macdnie.com/gl/privacidade.html
+- Terms of use: https://macdnie.com/condiciones.html · https://macdnie.com/en/terms.html · https://macdnie.com/ca/condicions.html · https://macdnie.com/eu/erabilera-baldintzak.html · https://macdnie.com/gl/condicions.html
+- Blocked PIN / expired certificate guide: https://macdnie.com/pin-bloqueado.html · https://macdnie.com/en/dnie-pin-blocked.html · https://macdnie.com/ca/pin-bloquejat.html · https://macdnie.com/eu/pin-blokeatua.html · https://macdnie.com/gl/pin-bloqueado.html
+- AutoFirma on Mac: https://macdnie.com/autofirma-mac.html · https://macdnie.com/en/autofirma-mac.html · https://macdnie.com/ca/autofirma-mac.html · https://macdnie.com/eu/autofirma-mac.html · https://macdnie.com/gl/autofirma-mac.html
+- Glossary: https://macdnie.com/glosario.html · https://macdnie.com/en/dnie-glossary.html · https://macdnie.com/ca/glossari.html · https://macdnie.com/eu/glosarioa.html · https://macdnie.com/gl/glosario.html
 
 ## Contact
 Email: macdnie@nexoapex.com

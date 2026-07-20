@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glossari del DNIe i la signatura electrònica — macDNIe</title>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="nexoapex">
+  <meta name="description" content="Què són PAdES, CAdES, XAdES, PKCS#11, CWA 14890, OCSP, PAD i AutoFirma. Glossari clar dels termes del DNIe i la signatura electrònica a macOS.">
+  <link rel="canonical" href="https://macdnie.com/ca/glossari.html">
+  <link rel="alternate" hreflang="es" href="https://macdnie.com/glosario.html">
+  <link rel="alternate" hreflang="en" href="https://macdnie.com/en/dnie-glossary.html">
+  <link rel="alternate" hreflang="ca" href="https://macdnie.com/ca/glossari.html">
+  <link rel="alternate" hreflang="eu" href="https://macdnie.com/eu/glosarioa.html">
+  <link rel="alternate" hreflang="gl" href="https://macdnie.com/gl/glosario.html">
+  <link rel="alternate" hreflang="x-default" href="https://macdnie.com/glosario.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://macdnie.com/ca/glossari.html">
+  <meta property="og:site_name" content="macDNIe">
+  <meta property="og:title" content="Glossari del DNIe i la signatura electrònica">
+  <meta property="og:description" content="PAdES, CAdES, XAdES, PKCS#11, CWA 14890, OCSP, PAD, seu electrònica, AutoFirma i més — explicat clar.">
+  <meta property="og:image" content="https://macdnie.com/og.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="macDNIe — lector i signador del DNIe per a macOS">
+  <meta property="og:locale" content="ca_ES">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="eu_ES">
+  <meta property="og:locale:alternate" content="gl_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://macdnie.com/og.png">
+  <meta name="twitter:image:alt" content="macDNIe — lector i signador del DNIe per a macOS">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e7e7e2">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121419">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://macdnie.com/#org",
+      "name": "nexoapex",
+      "url": "https://macdnie.com/",
+      "email": "macdnie@nexoapex.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://macdnie.com/assets/icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "macdnie@nexoapex.com",
+        "contactType": "customer support",
+        "availableLanguage": ["es", "en"]
+      },
+      "sameAs": [
+        "https://nexoapex.com"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://macdnie.com/#website",
+      "url": "https://macdnie.com/",
+      "name": "macDNIe",
+      "publisher": {
+        "@id": "https://macdnie.com/#org"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://macdnie.com/ca/glossari.html#webpage",
+      "url": "https://macdnie.com/ca/glossari.html",
+      "name": "Glossari del DNIe i la signatura electrònica",
+      "inLanguage": "ca",
+      "isPartOf": {
+        "@id": "https://macdnie.com/#website"
+      },
+      "publisher": {
+        "@id": "https://macdnie.com/#org"
+      },
+      "description": "Definicions clares dels termes tècnics del DNIe i la signatura electrònica: formats de signatura, estàndards de targeta i conceptes de l'Administració espanyola.",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-20"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inici", "item": "https://macdnie.com/ca/" },
+        { "@type": "ListItem", "position": 2, "name": "Glossari", "item": "https://macdnie.com/ca/glossari.html" }
+      ]
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://macdnie.com/ca/glossari.html#glossary",
+      "name": "Glossari del DNIe i la signatura electrònica",
+      "inLanguage": "ca",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-20",
+      "hasDefinedTerm": [
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#dnie", "name": "DNIe", "description": "Document Nacional d'Identitat electrònic, expedit per la Dirección General de la Policía. És una targeta amb un xip criptogràfic que conté la filiació del titular, la seva fotografia i certificats digitals." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#certificado", "name": "Certificat digital", "description": "Fitxer criptogràfic, emès per una autoritat de certificació, que vincula una clau pública a una identitat. El DNIe inclou certificats d'autenticació i de signatura; caduquen cada ~2 anys." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#pin-puk", "name": "PIN i PUK", "description": "El PIN és el codi que desbloqueja el xip del DNIe per utilitzar-lo. A diferència d'una targeta SIM, el DNIe no té PUK: si el PIN es bloqueja després de 3 intents fallits, només es restableix en persona en un PAD." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#pades", "name": "PAdES", "description": "PDF Advanced Electronic Signatures. Estàndard europeu (ETSI EN 319 142) per signar electrònicament fitxers PDF conservant-ne el format." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#cades", "name": "CAdES", "description": "CMS Advanced Electronic Signatures. Estàndard europeu (ETSI EN 319 122) per a la signatura electrònica de qualsevol tipus de fitxer, no només PDF, empaquetant la signatura juntament amb el document." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#xades", "name": "XAdES", "description": "XML Advanced Electronic Signatures. Estàndard europeu (ETSI EN 319 132) per a la signatura electrònica de documents XML, molt utilitzat en tràmits i facturació electrònica." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#rfc3161", "name": "Segell de temps (RFC 3161)", "description": "Prova criptogràfica, emesa per una Autoritat de Segellat de Temps (TSA), que demostra que un document existia en un instant concret. Només s'envia el hash del document, mai el seu contingut." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#ocsp", "name": "OCSP", "description": "Online Certificate Status Protocol. Protocol per comprovar en temps real si un certificat digital ha estat revocat, sense descarregar llistes completes de revocació." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#pkcs11", "name": "PKCS#11", "description": "Estàndard criptogràfic que defineix una interfície comuna perquè les aplicacions (com els navegadors) accedeixin a targetes intel·ligents i tokens criptogràfics. Firefox a macOS l'utilitza per reconèixer certificats de targeta." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#pkcs15", "name": "PKCS#15", "description": "Estàndard que defineix com s'organitzen i s'emmagatzemen certificats, claus i dades dins del xip d'una targeta intel·ligent com el DNIe, perquè qualsevol lector compatible els sàpiga interpretar." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#cwa14890", "name": "CWA 14890", "description": "Especificació europea (CEN Workshop Agreement) que defineix el canal segur xifrat entre una targeta com el DNIe i l'aplicació que la llegeix, protegint el PIN i les dades en trànsit." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#iso7816", "name": "ISO/IEC 7816-4", "description": "Estàndard internacional que defineix les ordres (APDU) amb què un lector es comunica amb el xip d'una targeta intel·ligent de contacte, com el DNIe." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#ccid", "name": "CCID", "description": "Chip/Smart Card Interface Device. Classe estàndard de dispositiu USB per a lectors de targetes intel·ligents, reconeguda de forma nativa per macOS sense controladors addicionals." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#cryptotokenkit", "name": "CryptoTokenKit", "description": "Framework de macOS que permet a Safari, Chrome i Edge reconèixer de manera nativa els certificats d'una targeta intel·ligent, mostrant-los al mateix diàleg del navegador." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#pad", "name": "PAD (Punt d'Actualització del DNIe)", "description": "Quiosc d'autoservei a les Oficinas de Expedición del DNIe (comissaries) per desbloquejar el PIN o renovar certificats caducats, verificant la identitat amb empremta dactilar, sense cita prèvia." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#sede", "name": "Seu electrònica", "description": "Adreça d'Internet d'un organisme públic (Agencia Tributaria, Seguridad Social, DGT...) a través de la qual es poden fer tràmits administratius amb validesa legal, normalment exigint identificació amb certificat digital." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/ca/glossari.html#autofirma", "name": "AutoFirma", "description": "Aplicació oficial de signatura electrònica distribuïda gratuïtament pel Gobierno de España, que moltes seus electròniques invoquen directament des del navegador per signar un tràmit." }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Salta al contingut</a>
+
+  <header class="wrap site-head">
+    <a class="brand" href="index.html" aria-label="macDNIe, inici">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M33 17 C 37 9.5, 46 9, 46 9 C 46 9, 45 17.5, 38.5 20 C 35.3 21.1, 33.4 19.6, 33 17 Z" fill="var(--gold)"/>
+        <path d="M31.4 18.5 C 30.8 14.5, 30.2 12, 28.4 10" fill="none" stroke="var(--ink)" stroke-width="2.1" stroke-linecap="round"/>
+        <path d="M32 21.5 C 26.5 13.8, 14 12.8, 10.5 23.2 C 7.4 32.4, 11.6 50.8, 23 54.2 C 27 55.4, 29.9 53.6, 32 53.6 C 34.1 53.6, 37 55.4, 41 54.2 C 52.4 50.8, 56.6 32.4, 53.5 23.2 C 50 12.8, 37.5 13.8, 32 21.5 Z" fill="var(--ink)"/>
+        <rect x="22.3" y="30" width="19.4" height="14.6" rx="2.4" fill="#c79a2e"/>
+        <g stroke="#17130a" stroke-width="1.3" fill="none" opacity="0.9">
+          <rect x="27.4" y="33.2" width="9.2" height="8.2" rx="1.3"/>
+          <line x1="22.3" y1="37.3" x2="27.4" y2="37.3"/>
+          <line x1="36.6" y1="37.3" x2="41.7" y2="37.3"/>
+          <line x1="32" y1="30" x2="32" y2="33.2"/>
+          <line x1="32" y1="41.4" x2="32" y2="44.6"/>
+        </g>
+      </svg>
+      <b>mac<span>DNIe</span></b>
+    </a>
+    <nav class="site-nav" aria-label="Principal">
+      <a class="nav-link" href="index.html#funciones">Funcions</a>
+      <a class="nav-link" href="index.html#precio">Preu</a>
+      <a class="nav-link" href="index.html#faq">Preguntes</a>
+      <details class="lang-menu">
+        <summary aria-label="Canviar d'idioma">CA</summary>
+        <div class="lang-menu-list">
+          <a href="../glosario.html" hreflang="es" lang="es">Español</a>
+          <a href="../en/dnie-glossary.html" hreflang="en" lang="en">English</a>
+          <a href="../eu/glosarioa.html" hreflang="eu" lang="eu">Euskara</a>
+          <a href="../gl/glosario.html" hreflang="gl" lang="gl">Galego</a>
+        </div>
+      </details>
+      <a class="nav-cta" href="index.html#descargar">Descarrega</a>
+    </nav>
+  </header>
+
+  <main id="contenido" class="wrap prose">
+    <p class="eyebrow">Referència</p>
+    <h1>Glossari del DNIe i la signatura electrònica</h1>
+    <p class="updated">Actualitzat: 20 de juliol de 2026</p>
+
+    <p class="lead">Els termes tècnics que apareixen en llegir, identificar-te o signar amb el DNIe, explicats en una frase cadascun: formats de signatura, estàndards de targeta intel·ligent i conceptes propis de l'Administració espanyola.</p>
+
+    <h2 id="dnie">DNIe</h2>
+    <p>Document Nacional d'Identitat electrònic, expedit per la Dirección General de la Policía. És una targeta amb un xip criptogràfic que conté la filiació del titular, la seva fotografia i certificats digitals.</p>
+
+    <h2 id="certificado">Certificat digital</h2>
+    <p>Fitxer criptogràfic, emès per una autoritat de certificació, que vincula una clau pública a una identitat. El DNIe inclou un certificat d'autenticació i un altre de signatura; tots dos caduquen cada ~2 anys, abans que la targeta física. Vegeu <a href="pin-bloquejat.html">què fer si han caducat</a>.</p>
+
+    <h2 id="pin-puk">PIN i PUK</h2>
+    <p>El PIN és el codi que desbloqueja el xip del DNIe per llegir-lo, identificar-te o signar-hi. A diferència d'una targeta SIM, <strong>el DNIe no té PUK</strong>: si el PIN es bloqueja després de 3 intents fallits, l'única manera de fixar-ne un de nou és en persona, en un PAD. Guia completa: <a href="pin-bloquejat.html">PIN bloquejat o caducat</a>.</p>
+
+    <h2 id="pades">PAdES</h2>
+    <p><em>PDF Advanced Electronic Signatures.</em> Estàndard europeu (ETSI EN 319 142) per signar electrònicament fitxers PDF conservant-ne el format original.</p>
+
+    <h2 id="cades">CAdES</h2>
+    <p><em>CMS Advanced Electronic Signatures.</em> Estàndard europeu (ETSI EN 319 122) per signar electrònicament qualsevol tipus de fitxer, no només PDF, empaquetant la signatura juntament amb el document original.</p>
+
+    <h2 id="xades">XAdES</h2>
+    <p><em>XML Advanced Electronic Signatures.</em> Estàndard europeu (ETSI EN 319 132) per signar documents XML, molt utilitzat en tràmits administratius i facturació electrònica.</p>
+
+    <h2 id="rfc3161">Segell de temps (RFC 3161)</h2>
+    <p>Prova criptogràfica, emesa per una Autoritat de Segellat de Temps (TSA), que demostra que un document existia en un instant concret. Només viatja el <em>hash</em> del document —la seva empremta matemàtica—, mai el contingut.</p>
+
+    <h2 id="ocsp">OCSP</h2>
+    <p><em>Online Certificate Status Protocol.</em> Protocol per comprovar en temps real si un certificat digital ha estat revocat, consultant només l'identificador del certificat en qüestió.</p>
+
+    <h2 id="pkcs11">PKCS#11</h2>
+    <p>Estàndard criptogràfic que defineix una interfície comuna perquè les aplicacions —com els navegadors— accedeixin a targetes intel·ligents i tokens criptogràfics. Firefox a macOS el necessita per reconèixer els certificats d'una targeta com el DNIe; per això macDNIe inclou el seu propi mòdul PKCS#11 a la versió de descàrrega directa. Més informació a la guia d'<a href="autofirma-mac.html">AutoFirma al Mac</a>.</p>
+
+    <h2 id="pkcs15">PKCS#15</h2>
+    <p>Estàndard que defineix com s'organitzen i s'emmagatzemen certificats, claus i dades dins del xip d'una targeta intel·ligent com el DNIe, perquè qualsevol lector compatible els sàpiga interpretar de manera uniforme.</p>
+
+    <h2 id="cwa14890">CWA 14890</h2>
+    <p>Especificació europea (CEN Workshop Agreement) que defineix el canal segur i xifrat entre una targeta com el DNIe i l'aplicació que la llegeix, protegint el PIN i les dades personals mentre viatgen entre la targeta i l'ordinador.</p>
+
+    <h2 id="iso7816">ISO/IEC 7816-4</h2>
+    <p>Estàndard internacional que defineix les ordres (APDU) amb què un lector es comunica amb el xip d'una targeta intel·ligent de contacte, com el DNIe.</p>
+
+    <h2 id="ccid">CCID</h2>
+    <p><em>Chip/Smart Card Interface Device.</em> Classe estàndard de dispositiu USB per a lectors de targetes intel·ligents, reconeguda de manera nativa per macOS sense necessitat d'instal·lar controladors addicionals.</p>
+
+    <h2 id="cryptotokenkit">CryptoTokenKit</h2>
+    <p>Framework de macOS que permet a Safari, Chrome i Edge reconèixer de manera nativa els certificats d'una targeta intel·ligent, mostrant-los directament al diàleg d'identificació del mateix navegador.</p>
+
+    <h2 id="pad">PAD (Punt d'Actualització del DNIe)</h2>
+    <p>Quiosc d'autoservei, instal·lat a les Oficinas de Expedición del DNIe (comissaries), per desbloquejar el PIN o renovar certificats caducats verificant la identitat amb empremta dactilar. Gratuït i sense cita prèvia. Detall complet a <a href="pin-bloquejat.html">PIN bloquejat o caducat</a>.</p>
+
+    <h2 id="sede">Seu electrònica</h2>
+    <p>Adreça d'Internet d'un organisme públic —Agencia Tributaria, Seguridad Social, DGT i altres— a través de la qual es poden fer tràmits administratius amb validesa legal, gairebé sempre exigint identificació amb certificat digital.</p>
+
+    <h2 id="autofirma">AutoFirma</h2>
+    <p>Aplicació oficial de signatura electrònica, distribuïda gratuïtament pel Gobierno de España, que moltes seus electròniques invoquen directament des del navegador per signar un tràmit al moment. Comparativa completa: <a href="autofirma-mac.html">AutoFirma al Mac</a>.</p>
+
+    <p>Et falta algun terme? <a href="mailto:macdnie@nexoapex.com?subject=macDNIe%20—%20glossari">Escriu-nos</a> i l'afegim.</p>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p class="disclaimer"><strong>Producte no oficial.</strong> macDNIe no està afiliat ni avalat per la Dirección General de la Policía, el Ministerio del Interior ni el Gobierno de España. «DNIe» designa el Document Nacional d'Identitat electrònic, expedit per la Dirección General de la Policía. Tot el tractament del DNIe té lloc al teu dispositiu; no es transmet cap dada personal.</p>
+      <ul class="foot-nav">
+        <li><a href="privadesa.html">Política de privadesa</a></li>
+        <li><a href="condicions.html">Condicions d'ús</a></li>
+        <li><a href="pin-bloquejat.html">PIN bloquejat o caducat</a></li>
+        <li><a href="autofirma-mac.html">AutoFirma al Mac</a></li>
+        <li><a href="glossari.html">Glossari</a></li>
+        <li><a href="mailto:macdnie@nexoapex.com">macdnie@nexoapex.com</a></li>
+        <li><a href="../glosario.html" hreflang="es" lang="es">Español</a></li>
+        <li><a href="../en/dnie-glossary.html" hreflang="en" lang="en">English</a></li>
+        <li><a href="../eu/glosarioa.html" hreflang="eu" lang="eu">Euskara</a></li>
+        <li><a href="../gl/glosario.html" hreflang="gl" lang="gl">Galego</a></li>
+      </ul>
+      <p class="foot-meta">© 2026 nexoapex · macdnie.com · sense cookies, sense analítica, sense rastrejadors</p>
+    </div>
+  </footer>
+</body>
+</html>

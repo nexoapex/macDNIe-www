@@ -1,6 +1,6 @@
 # macDNIe
 
-> macDNIe is an unofficial macOS app to read, authenticate with, and sign documents using the Spanish electronic national ID card (DNIe / Documento Nacional de Identidad electrónico). All processing happens on-device — the PIN and personal data never leave the Mac. The interface is available in Spanish, Catalan, Basque and Galician. Publisher: nexoapex. It is not affiliated with or endorsed by the Spanish government.
+> macDNIe is an unofficial macOS app to read, authenticate with, and sign documents using the Spanish electronic national ID card (DNIe / Documento Nacional de Identidad electrónico). All processing happens on-device — the PIN and personal data never leave the Mac. The app's interface is available in Spanish, Catalan, Basque and Galician; this website (macdnie.com) is published in all five languages: Spanish (root), English (/en/), Catalan (/ca/), Basque (/eu/) and Galician (/gl/). Publisher: nexoapex. It is not affiliated with or endorsed by the Spanish government.
 
 ## What macDNIe does
 - Reads the DNIe's personal data and photo, entirely on-device.
@@ -18,13 +18,14 @@
 - Status: in review on the Mac App Store; not yet available to download.
 
 ## Pages
-- [Home (Spanish)](https://macdnie.com/): overview, features, pricing and FAQ.
-- [Home (English)](https://macdnie.com/en/): the English version of the site.
-- [Privacy policy](https://macdnie.com/privacidad.html) — [Privacy policy (English)](https://macdnie.com/en/privacy.html)
-- [Terms of use](https://macdnie.com/condiciones.html) — [Terms of use (English)](https://macdnie.com/en/terms.html)
-- [Blocked PIN / expired certificate guide](https://macdnie.com/pin-bloqueado.html) — [English](https://macdnie.com/en/blocked-pin.html): the DNIe has no PUK; unblocking and renewal only happen in person, at a PAD, free, no appointment.
-- [AutoFirma on Mac](https://macdnie.com/autofirma-mac.html) — [English](https://macdnie.com/en/autofirma-mac.html): what AutoFirma is, when it's still needed, and how macDNIe complements it.
-- [Glossary](https://macdnie.com/glosario.html) — [English](https://macdnie.com/en/glossary.html): DNIe and e-signature terms (PAdES, CAdES, XAdES, PKCS#11, CWA 14890, OCSP, PAD, sede electrónica, AutoFirma).
+Each page below is published in five languages: Spanish (es, language of record), English (en), Catalan (ca), Basque (eu), Galician (gl).
+
+- Home — overview, features, pricing and FAQ: [es](https://macdnie.com/) · [en](https://macdnie.com/en/) · [ca](https://macdnie.com/ca/) · [eu](https://macdnie.com/eu/) · [gl](https://macdnie.com/gl/)
+- Privacy policy: [es](https://macdnie.com/privacidad.html) · [en](https://macdnie.com/en/privacy.html) · [ca](https://macdnie.com/ca/privadesa.html) · [eu](https://macdnie.com/eu/pribatutasun-politika.html) · [gl](https://macdnie.com/gl/privacidade.html)
+- Terms of use: [es](https://macdnie.com/condiciones.html) · [en](https://macdnie.com/en/terms.html) · [ca](https://macdnie.com/ca/condicions.html) · [eu](https://macdnie.com/eu/erabilera-baldintzak.html) · [gl](https://macdnie.com/gl/condicions.html)
+- Blocked PIN / expired certificate guide — the DNIe has no PUK; unblocking and renewal only happen in person, at a PAD, free, no appointment: [es](https://macdnie.com/pin-bloqueado.html) · [en](https://macdnie.com/en/dnie-pin-blocked.html) · [ca](https://macdnie.com/ca/pin-bloquejat.html) · [eu](https://macdnie.com/eu/pin-blokeatua.html) · [gl](https://macdnie.com/gl/pin-bloqueado.html)
+- AutoFirma on Mac — what AutoFirma is, when it's still needed, and how macDNIe complements it: [es](https://macdnie.com/autofirma-mac.html) · [en](https://macdnie.com/en/autofirma-mac.html) · [ca](https://macdnie.com/ca/autofirma-mac.html) · [eu](https://macdnie.com/eu/autofirma-mac.html) · [gl](https://macdnie.com/gl/autofirma-mac.html)
+- Glossary — DNIe and e-signature terms (PAdES, CAdES, XAdES, PKCS#11, CWA 14890, OCSP, PAD, sede electrónica, AutoFirma): [es](https://macdnie.com/glosario.html) · [en](https://macdnie.com/en/dnie-glossary.html) · [ca](https://macdnie.com/ca/glossari.html) · [eu](https://macdnie.com/eu/glosarioa.html) · [gl](https://macdnie.com/gl/glosario.html)
 
 ## Optional
 - [Full content in one file](https://macdnie.com/llms-full.txt): the complete site content for ingestion.
