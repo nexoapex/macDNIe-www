@@ -41,6 +41,60 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://macdnie.com/privacidad.html"/>
   </url>
   <url>
+    <loc>https://macdnie.com/pin-bloqueado.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/pin-bloqueado.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/blocked-pin.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://macdnie.com/pin-bloqueado.html"/>
+  </url>
+  <url>
+    <loc>https://macdnie.com/en/blocked-pin.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/pin-bloqueado.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/blocked-pin.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://macdnie.com/pin-bloqueado.html"/>
+  </url>
+  <url>
+    <loc>https://macdnie.com/autofirma-mac.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/autofirma-mac.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/autofirma-mac.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://macdnie.com/autofirma-mac.html"/>
+  </url>
+  <url>
+    <loc>https://macdnie.com/en/autofirma-mac.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/autofirma-mac.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/autofirma-mac.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://macdnie.com/autofirma-mac.html"/>
+  </url>
+  <url>
+    <loc>https://macdnie.com/glosario.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/glosario.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/glossary.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://macdnie.com/glosario.html"/>
+  </url>
+  <url>
+    <loc>https://macdnie.com/en/glossary.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://macdnie.com/glosario.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://macdnie.com/en/glossary.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://macdnie.com/glosario.html"/>
+  </url>
+  <url>
     <loc>https://macdnie.com/condiciones.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>yearly</changefreq>

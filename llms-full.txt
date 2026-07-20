@@ -14,7 +14,7 @@ It is not an official government app. macDNIe is an independent product by nexoa
 3. Sign documents — sign PDFs and any file in the standard European formats: PAdES (PDF), CAdES and XAdES, with an RFC-3161 timestamp and, optionally, a visible signature with your logo on the first, last or all pages. macDNIe also validates already-signed documents. No Adobe required.
 
 ## AutoFirma
-Sites that require AutoFirma keep working: macDNIe is interoperable with it and does not replace it by force.
+AutoFirma is the official e-signature application distributed free of charge by the Government of Spain; many e-government sites invoke it directly from the browser to sign a submission on the spot. Sites that require AutoFirma keep working: macDNIe is interoperable with it and does not replace it by force. What macDNIe adds independently: browser sign-in via macOS's native CryptoTokenKit integration (Safari, Chrome, Edge) or its own PKCS#11 module (Firefox, direct-download edition), plus standalone document signing and validation that doesn't require going through a government site at all. Full comparison: https://macdnie.com/autofirma-mac.html (English: https://macdnie.com/en/autofirma-mac.html).
 
 ## Privacy
 Everything happens on your device; your PIN and personal data never leave the Mac. There is no telemetry, no analytics and no trackers — in the app or on the website. The only outbound connections are: OCSP (certificate revocation checks against the official responder), optional RFC-3161 timestamping when you sign, and Apple's In-App Purchase processing. Privacy policy: https://macdnie.com/privacidad.html (English: https://macdnie.com/en/privacy.html).
@@ -29,7 +29,7 @@ After 3 consecutive wrong PIN entries the DNIe blocks. The DNIe has no PUK. The 
 1. Go to a DNIe issuing office (Oficina de Expedición del DNIe, in a police station) with your card.
 2. Use a DNIe Update Point (Punto de Actualización del DNIe, "PAD") — a self-service kiosk.
 3. Identify yourself with your fingerprint and set a new PIN. It is free.
-It cannot be done online, by phone, or through the MiDNI app. macDNIe detects the blocked state and shows this guidance in-app.
+It cannot be done online, by phone, or through the MiDNI app. macDNIe detects the blocked state and shows this guidance in-app. Full guide: https://macdnie.com/pin-bloqueado.html (English: https://macdnie.com/en/blocked-pin.html).
 
 ## Expired certificates
 DNIe certificates are valid for about 2 years — they expire before the physical card. With expired certificates you can still read your data, but you cannot sign in or sign. Renewing is free and needs no appointment, at a DNIe Update Point (PAD) in a police issuing office, with your fingerprint; new certificates are generated on the same card. There is no online renewal. macDNIe warns you of expiry when it reads the card.
@@ -38,6 +38,20 @@ DNIe certificates are valid for about 2 years — they expire before the physica
 - macOS 13 (Ventura) or later, Intel or Apple Silicon.
 - A USB contact card reader (CCID).
 - Your DNIe and your PIN.
+
+## Glossary (selected terms)
+- PAdES / CAdES / XAdES: European standards (ETSI EN 319 142 / 122 / 132) for electronically signing PDF, any file type, and XML documents respectively.
+- RFC 3161 timestamp: cryptographic proof from a Time Stamping Authority (TSA) that a document existed at a given instant; only the document's hash is sent, never its content.
+- OCSP: protocol to check in real time whether a digital certificate has been revoked.
+- PKCS#11: standard interface letting applications (e.g. Firefox) access smart cards and cryptographic tokens; macDNIe ships its own PKCS#11 module for Firefox in the direct-download edition.
+- PKCS#15: standard for how certificates and keys are organized inside a smart card's chip.
+- CWA 14890: European specification for the encrypted secure channel between a card like the DNIe and the reading application.
+- ISO/IEC 7816-4: international standard for the commands a reader uses to talk to a contact smart card's chip.
+- CCID: standard USB device class for smart-card readers, recognized natively by macOS.
+- CryptoTokenKit: macOS framework letting Safari, Chrome and Edge natively recognize a smart card's certificates in the browser's own dialog.
+- PAD (Punto de Actualización del DNIe): self-service kiosk in DNIe issuing offices for unblocking a PIN or renewing certificates via fingerprint, free, no appointment.
+- Sede electrónica: the official online portal of a Spanish public body where legally valid administrative procedures are completed, usually requiring a digital certificate.
+Full glossary: https://macdnie.com/glosario.html (English: https://macdnie.com/en/glossary.html).
 
 ## Pricing
 - €10 per year (annual subscription), or
@@ -71,6 +85,9 @@ A: A Mac with macOS 13 or later (Intel or Apple Silicon), a USB contact card rea
 - Home (English): https://macdnie.com/en/
 - Privacy policy: https://macdnie.com/privacidad.html — English: https://macdnie.com/en/privacy.html
 - Terms of use: https://macdnie.com/condiciones.html — English: https://macdnie.com/en/terms.html
+- Blocked PIN / expired certificate guide: https://macdnie.com/pin-bloqueado.html — English: https://macdnie.com/en/blocked-pin.html
+- AutoFirma on Mac: https://macdnie.com/autofirma-mac.html — English: https://macdnie.com/en/autofirma-mac.html
+- Glossary: https://macdnie.com/glosario.html — English: https://macdnie.com/en/glossary.html
 
 ## Contact
 Email: macdnie@nexoapex.com

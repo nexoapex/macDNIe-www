@@ -22,6 +22,9 @@
 - [Home (English)](https://macdnie.com/en/): the English version of the site.
 - [Privacy policy](https://macdnie.com/privacidad.html) — [Privacy policy (English)](https://macdnie.com/en/privacy.html)
 - [Terms of use](https://macdnie.com/condiciones.html) — [Terms of use (English)](https://macdnie.com/en/terms.html)
+- [Blocked PIN / expired certificate guide](https://macdnie.com/pin-bloqueado.html) — [English](https://macdnie.com/en/blocked-pin.html): the DNIe has no PUK; unblocking and renewal only happen in person, at a PAD, free, no appointment.
+- [AutoFirma on Mac](https://macdnie.com/autofirma-mac.html) — [English](https://macdnie.com/en/autofirma-mac.html): what AutoFirma is, when it's still needed, and how macDNIe complements it.
+- [Glossary](https://macdnie.com/glosario.html) — [English](https://macdnie.com/en/glossary.html): DNIe and e-signature terms (PAdES, CAdES, XAdES, PKCS#11, CWA 14890, OCSP, PAD, sede electrónica, AutoFirma).
 
 ## Optional
 - [Full content in one file](https://macdnie.com/llms-full.txt): the complete site content for ingestion.

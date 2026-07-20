@@ -50,6 +50,12 @@
         "width": 512,
         "height": 512
       },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "macdnie@nexoapex.com",
+        "contactType": "customer support",
+        "availableLanguage": ["es", "en"]
+      },
       "sameAs": [
         "https://nexoapex.com"
       ]
@@ -412,7 +418,7 @@
               <li>Use a DNIe update kiosk (PAD — Punto de Actualización del DNIe): they are self-service.</li>
               <li>Identify yourself with your fingerprint and set a new PIN. Free of charge.</li>
             </ol>
-            <p>It cannot be unblocked over the Internet or by phone. macDNIe detects the blocked state and shows you this same guidance inside the app. Official information at <a href="https://www.dnielectronico.es/PortalDNIe/" rel="noopener">dnielectronico.es</a>.</p>
+            <p>It cannot be unblocked over the Internet or by phone. macDNIe detects the blocked state and shows you this same guidance inside the app. Official information at <a href="https://www.dnielectronico.es/PortalDNIe/" rel="noopener">dnielectronico.es</a>. Full guide: <a href="blocked-pin.html">blocked or expired PIN</a>.</p>
           </div>
         </details>
 
@@ -420,7 +426,7 @@
           <summary>My certificates have expired. Is the card useless now?</summary>
           <div class="answer">
             <p>The card still works: DNIe certificates expire roughly every 2 years, before the physical document does. With expired certificates you can still read your data, but no portal will let you log in or sign.</p>
-            <p>Renewing them is free and needs no appointment: at a DNIe update kiosk (PAD) in any issuing office (police station), your fingerprint generates fresh certificates onto the same card. There is no online renewal. macDNIe warns you about expiry when it reads the card. Details at <a href="https://www.dnielectronico.es/PortalDNIe/" rel="noopener">dnielectronico.es</a>. If the physical document itself has expired, book an appointment at <a href="https://www.citapreviadnie.es/" rel="noopener">citapreviadnie.es</a>.</p>
+            <p>Renewing them is free and needs no appointment: at a DNIe update kiosk (PAD) in any issuing office (police station), your fingerprint generates fresh certificates onto the same card. There is no online renewal. macDNIe warns you about expiry when it reads the card. Details at <a href="https://www.dnielectronico.es/PortalDNIe/" rel="noopener">dnielectronico.es</a>. If the physical document itself has expired, book an appointment at <a href="https://www.citapreviadnie.es/" rel="noopener">citapreviadnie.es</a>. Full guide: <a href="blocked-pin.html">blocked or expired PIN</a>.</p>
           </div>
         </details>
 
@@ -439,7 +445,7 @@
           <summary>What about AutoFirma? And Firefox?</summary>
           <div class="answer">
             <p>Portals that require <a href="https://firmaelectronica.gob.es/" rel="noopener">AutoFirma</a> keep working: macDNIe is interoperable with it rather than forcibly replacing it.</p>
-            <p>In Safari, Chrome and Edge, sign-in goes through macOS's native integration (CryptoTokenKit): your DNIe certificate shows up in the browser's own dialog. Firefox doesn't use that integration, so macDNIe ships its own PKCS#11 module — included in the direct-download edition — so you can sign in from Firefox too.</p>
+            <p>In Safari, Chrome and Edge, sign-in goes through macOS's native integration (CryptoTokenKit): your DNIe certificate shows up in the browser's own dialog. Firefox doesn't use that integration, so macDNIe ships its own PKCS#11 module — included in the direct-download edition — so you can sign in from Firefox too. Full comparison: <a href="autofirma-mac.html">AutoFirma on Mac</a>.</p>
           </div>
         </details>
 
@@ -474,6 +480,9 @@
       <ul class="foot-nav">
         <li><a href="privacy.html">Privacy policy</a></li>
         <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="blocked-pin.html">Blocked or expired PIN</a></li>
+        <li><a href="autofirma-mac.html">AutoFirma on Mac</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
         <li><a href="mailto:macdnie@nexoapex.com">macdnie@nexoapex.com</a></li>
         <li><a href="../index.html" hreflang="es" lang="es">Español</a></li>
       </ul>

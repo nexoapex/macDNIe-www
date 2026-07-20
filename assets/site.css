@@ -34,7 +34,7 @@
     --sink:      #0d0f13;
     --ink:       #e8e5da;
     --ink-soft:  #9a9c9f;
-    --ink-faint: #7c8087;
+    --ink-faint: #84878e;   /* AA-compliant on --bg/--raise/--sink (≥4.69:1) */
     --line:      #2a2e36;
     --gold:      #d7a637;
     --gold-text: #d7a637;   /* passes 8.25:1 on dark --bg */
@@ -385,6 +385,14 @@ a { color: inherit; }
 }
 .prose dl.controller dd { margin: 0; color: var(--ink-soft); font-size: 15px; }
 @media (max-width: 520px) { .prose dl.controller { grid-template-columns: 1fr; gap: 2px; } .prose dl.controller dd { margin-bottom: 12px; } }
+.prose .compare {
+  width: 100%; border-collapse: collapse; margin: 22px 0 30px; font-size: 14.5px;
+}
+.prose .compare th, .prose .compare td { text-align: left; padding: 11px 16px; border-bottom: 1px solid var(--line); }
+.prose .compare th { color: var(--ink); font-weight: 640; }
+.prose .compare td { color: var(--ink-soft); }
+.prose .compare tr:first-child th { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold-text); border-bottom-color: var(--line); }
+.prose .compare-wrap { overflow-x: auto; }
 
 /* ── 404 ── */
 .notfound {

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DNIe and e-signature glossary — macDNIe</title>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="nexoapex">
+  <meta name="description" content="What PAdES, CAdES, XAdES, PKCS#11, PKCS#15, CWA 14890, CCID, OCSP, PAD and AutoFirma mean. A clear glossary of DNIe and e-signature terms for Mac users.">
+  <link rel="canonical" href="https://macdnie.com/en/glossary.html">
+  <link rel="alternate" hreflang="es" href="https://macdnie.com/glosario.html">
+  <link rel="alternate" hreflang="en" href="https://macdnie.com/en/glossary.html">
+  <link rel="alternate" hreflang="x-default" href="https://macdnie.com/glosario.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://macdnie.com/en/glossary.html">
+  <meta property="og:site_name" content="macDNIe">
+  <meta property="og:title" content="DNIe and e-signature glossary">
+  <meta property="og:description" content="PAdES, CAdES, XAdES, PKCS#11, CWA 14890, OCSP, PAD, sede electrónica, AutoFirma and more — explained clearly.">
+  <meta property="og:image" content="https://macdnie.com/og.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="macDNIe — Spanish DNIe reader and signer for macOS">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://macdnie.com/og.png">
+  <meta name="twitter:image:alt" content="macDNIe — Spanish DNIe reader and signer for macOS">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e7e7e2">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121419">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://macdnie.com/#org",
+      "name": "nexoapex",
+      "url": "https://macdnie.com/",
+      "email": "macdnie@nexoapex.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://macdnie.com/assets/icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "macdnie@nexoapex.com",
+        "contactType": "customer support",
+        "availableLanguage": ["es", "en"]
+      },
+      "sameAs": [
+        "https://nexoapex.com"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://macdnie.com/#website",
+      "url": "https://macdnie.com/",
+      "name": "macDNIe",
+      "publisher": {
+        "@id": "https://macdnie.com/#org"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://macdnie.com/en/glossary.html#webpage",
+      "url": "https://macdnie.com/en/glossary.html",
+      "name": "DNIe and e-signature glossary",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://macdnie.com/#website"
+      },
+      "publisher": {
+        "@id": "https://macdnie.com/#org"
+      },
+      "description": "Clear definitions of DNIe and e-signature technical terms: signature formats, smart-card standards and Spanish e-government concepts.",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-20"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://macdnie.com/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Glossary", "item": "https://macdnie.com/en/glossary.html" }
+      ]
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://macdnie.com/en/glossary.html#glossary",
+      "name": "DNIe and e-signature glossary",
+      "inLanguage": "en",
+      "hasDefinedTerm": [
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#dnie", "name": "DNIe", "description": "Documento Nacional de Identidad electrónico — Spain's electronic national identity document, issued by the Dirección General de la Policía. A card with a cryptographic chip holding the holder's identity data, photograph and digital certificates." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#certificate", "name": "Digital certificate", "description": "A cryptographic file, issued by a certification authority, that binds a public key to an identity. The DNIe carries an authentication certificate and a signing certificate; both expire roughly every 2 years." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#pin-puk", "name": "PIN and PUK", "description": "The PIN is the code that unlocks the DNIe chip for reading, signing in or signing. Unlike a SIM card, the DNIe has no PUK: if the PIN is blocked after 3 failed attempts, it can only be reset in person at a PAD." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#pades", "name": "PAdES", "description": "PDF Advanced Electronic Signatures. A European standard (ETSI EN 319 142) for electronically signing PDF files while preserving their original format." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#cades", "name": "CAdES", "description": "CMS Advanced Electronic Signatures. A European standard (ETSI EN 319 122) for electronically signing any file type, not just PDF, packaging the signature alongside the original document." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#xades", "name": "XAdES", "description": "XML Advanced Electronic Signatures. A European standard (ETSI EN 319 132) for signing XML documents, widely used in government filings and e-invoicing." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#rfc3161", "name": "Timestamp (RFC 3161)", "description": "A cryptographic proof, issued by a Time Stamping Authority (TSA), that a document existed at a specific instant. Only the document's hash — its mathematical fingerprint — is sent, never its content." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#ocsp", "name": "OCSP", "description": "Online Certificate Status Protocol. A protocol for checking in real time whether a digital certificate has been revoked, by querying only the identifier of that certificate." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#pkcs11", "name": "PKCS#11", "description": "A cryptographic standard defining a common interface for applications — such as browsers — to access smart cards and cryptographic tokens. Firefox on macOS needs it to recognize a smart card's certificates, which is why macDNIe ships its own PKCS#11 module in the direct-download edition." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#pkcs15", "name": "PKCS#15", "description": "A standard defining how certificates, keys and data are organized and stored inside a smart card's chip, such as the DNIe's, so any compatible reader can interpret them uniformly." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#cwa14890", "name": "CWA 14890", "description": "A European specification (CEN Workshop Agreement) defining the encrypted secure channel between a card like the DNIe and the application reading it, protecting the PIN and personal data in transit." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#iso7816", "name": "ISO/IEC 7816-4", "description": "An international standard defining the commands (APDUs) a reader uses to communicate with the chip of a contact smart card, such as the DNIe." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#ccid", "name": "CCID", "description": "Chip/Smart Card Interface Device. A standard USB device class for smart-card readers, recognized natively by macOS with no extra drivers." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#cryptotokenkit", "name": "CryptoTokenKit", "description": "A macOS framework that lets Safari, Chrome and Edge natively recognize a smart card's certificates, surfacing them directly in the browser's own sign-in dialog." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#pad", "name": "PAD (DNIe Update Point)", "description": "A self-service kiosk, installed inside DNIe issuing offices (police stations), for unblocking a PIN or renewing expired certificates via fingerprint verification. Free, with no appointment needed." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#sede", "name": "Sede electrónica", "description": "The official online portal of a Spanish public body — the Tax Agency, Social Security, the DGT and others — through which legally valid administrative procedures can be completed, almost always requiring sign-in with a digital certificate." },
+        { "@type": "DefinedTerm", "@id": "https://macdnie.com/en/glossary.html#autofirma", "name": "AutoFirma", "description": "The official e-signature application, distributed free of charge by the Government of Spain, which many e-government sites invoke directly from the browser to sign a submission on the spot." }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="wrap site-head">
+    <a class="brand" href="index.html" aria-label="macDNIe, home">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M33 17 C 37 9.5, 46 9, 46 9 C 46 9, 45 17.5, 38.5 20 C 35.3 21.1, 33.4 19.6, 33 17 Z" fill="var(--gold)"/>
+        <path d="M31.4 18.5 C 30.8 14.5, 30.2 12, 28.4 10" fill="none" stroke="var(--ink)" stroke-width="2.1" stroke-linecap="round"/>
+        <path d="M32 21.5 C 26.5 13.8, 14 12.8, 10.5 23.2 C 7.4 32.4, 11.6 50.8, 23 54.2 C 27 55.4, 29.9 53.6, 32 53.6 C 34.1 53.6, 37 55.4, 41 54.2 C 52.4 50.8, 56.6 32.4, 53.5 23.2 C 50 12.8, 37.5 13.8, 32 21.5 Z" fill="var(--ink)"/>
+        <rect x="22.3" y="30" width="19.4" height="14.6" rx="2.4" fill="#c79a2e"/>
+        <g stroke="#17130a" stroke-width="1.3" fill="none" opacity="0.9">
+          <rect x="27.4" y="33.2" width="9.2" height="8.2" rx="1.3"/>
+          <line x1="22.3" y1="37.3" x2="27.4" y2="37.3"/>
+          <line x1="36.6" y1="37.3" x2="41.7" y2="37.3"/>
+          <line x1="32" y1="30" x2="32" y2="33.2"/>
+          <line x1="32" y1="41.4" x2="32" y2="44.6"/>
+        </g>
+      </svg>
+      <b>mac<span>DNIe</span></b>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="nav-link" href="index.html#features">Features</a>
+      <a class="nav-link" href="index.html#pricing">Pricing</a>
+      <a class="nav-link" href="index.html#faq">FAQ</a>
+      <a class="lang-switch" href="../glosario.html" hreflang="es" lang="es" aria-label="Leer esta página en español">ES</a>
+      <a class="nav-cta" href="index.html#download">Download</a>
+    </nav>
+  </header>
+
+  <main id="content" class="wrap prose">
+    <p class="eyebrow">Reference</p>
+    <h1>DNIe and e-signature glossary</h1>
+    <p class="updated">Updated: 20 July 2026</p>
+
+    <p class="lead">The technical terms that come up when reading, signing in or signing with the DNIe, explained in a sentence or two each: signature formats, smart-card standards, and concepts specific to Spain's public administration.</p>
+
+    <h2 id="dnie">DNIe</h2>
+    <p>Documento Nacional de Identidad electrónico — Spain's electronic national identity document, issued by the Dirección General de la Policía. A card with a cryptographic chip holding the holder's identity data, photograph and digital certificates.</p>
+
+    <h2 id="certificate">Digital certificate</h2>
+    <p>A cryptographic file, issued by a certification authority, that binds a public key to an identity. The DNIe carries an authentication certificate and a signing certificate; both expire roughly every 2 years, before the physical card does. See <a href="blocked-pin.html">what to do once they've expired</a>.</p>
+
+    <h2 id="pin-puk">PIN and PUK</h2>
+    <p>The PIN is the code that unlocks the DNIe chip for reading, signing in or signing. Unlike a SIM card, <strong>the DNIe has no PUK</strong>: if the PIN is blocked after 3 failed attempts, the only way to set a new one is in person, at a PAD. Full guide: <a href="blocked-pin.html">blocked or expired PIN</a>.</p>
+
+    <h2 id="pades">PAdES</h2>
+    <p><em>PDF Advanced Electronic Signatures.</em> A European standard (ETSI EN 319 142) for electronically signing PDF files while preserving their original format.</p>
+
+    <h2 id="cades">CAdES</h2>
+    <p><em>CMS Advanced Electronic Signatures.</em> A European standard (ETSI EN 319 122) for electronically signing any file type, not just PDF, packaging the signature alongside the original document.</p>
+
+    <h2 id="xades">XAdES</h2>
+    <p><em>XML Advanced Electronic Signatures.</em> A European standard (ETSI EN 319 132) for signing XML documents, widely used in government filings and e-invoicing.</p>
+
+    <h2 id="rfc3161">Timestamp (RFC 3161)</h2>
+    <p>A cryptographic proof, issued by a Time Stamping Authority (TSA), that a document existed at a specific instant. Only the document's <em>hash</em> — its mathematical fingerprint — is sent, never its content.</p>
+
+    <h2 id="ocsp">OCSP</h2>
+    <p><em>Online Certificate Status Protocol.</em> A protocol for checking in real time whether a digital certificate has been revoked, by querying only the identifier of that certificate.</p>
+
+    <h2 id="pkcs11">PKCS#11</h2>
+    <p>A cryptographic standard defining a common interface for applications — such as browsers — to access smart cards and cryptographic tokens. Firefox on macOS needs it to recognize a card's certificates, which is why macDNIe ships its own PKCS#11 module in the direct-download edition. More in the <a href="autofirma-mac.html">AutoFirma on Mac</a> guide.</p>
+
+    <h2 id="pkcs15">PKCS#15</h2>
+    <p>A standard defining how certificates, keys and data are organized and stored inside a smart card's chip, such as the DNIe's, so any compatible reader can interpret them uniformly.</p>
+
+    <h2 id="cwa14890">CWA 14890</h2>
+    <p>A European specification (CEN Workshop Agreement) defining the encrypted secure channel between a card like the DNIe and the application reading it, protecting the PIN and personal data as they travel between card and computer.</p>
+
+    <h2 id="iso7816">ISO/IEC 7816-4</h2>
+    <p>An international standard defining the commands (APDUs) a reader uses to communicate with the chip of a contact smart card, such as the DNIe.</p>
+
+    <h2 id="ccid">CCID</h2>
+    <p><em>Chip/Smart Card Interface Device.</em> A standard USB device class for smart-card readers, recognized natively by macOS with no extra drivers needed.</p>
+
+    <h2 id="cryptotokenkit">CryptoTokenKit</h2>
+    <p>A macOS framework that lets Safari, Chrome and Edge natively recognize a smart card's certificates, surfacing them directly in the browser's own sign-in dialog.</p>
+
+    <h2 id="pad">PAD (DNIe Update Point)</h2>
+    <p>A self-service kiosk, installed inside DNIe issuing offices (police stations), for unblocking a PIN or renewing expired certificates via fingerprint verification. Free, with no appointment needed. Full detail in <a href="blocked-pin.html">blocked or expired PIN</a>.</p>
+
+    <h2 id="sede">Sede electrónica</h2>
+    <p>The official online portal of a Spanish public body — the Tax Agency, Social Security, the DGT and others — through which legally valid administrative procedures can be completed, almost always requiring sign-in with a digital certificate.</p>
+
+    <h2 id="autofirma">AutoFirma</h2>
+    <p>The official e-signature application, distributed free of charge by the Government of Spain, which many e-government sites invoke directly from the browser to sign a submission on the spot. Full comparison: <a href="autofirma-mac.html">AutoFirma on Mac</a>.</p>
+
+    <p>Missing a term? <a href="mailto:macdnie@nexoapex.com?subject=macDNIe%20—%20glossary">Write to us</a> and we'll add it.</p>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p class="disclaimer"><strong>Unofficial product.</strong> macDNIe is not affiliated with or endorsed by the Dirección General de la Policía, the Ministry of the Interior or the Government of Spain. "DNIe" refers to the Spanish electronic national identity document, issued by the Dirección General de la Policía. All DNIe processing happens on your device; no personal data is ever transmitted.</p>
+      <ul class="foot-nav">
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="blocked-pin.html">Blocked or expired PIN</a></li>
+        <li><a href="autofirma-mac.html">AutoFirma on Mac</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="mailto:macdnie@nexoapex.com">macdnie@nexoapex.com</a></li>
+        <li><a href="../glosario.html" hreflang="es" lang="es">Español</a></li>
+      </ul>
+      <p class="foot-meta">© 2026 nexoapex · macdnie.com · no cookies, no analytics, no trackers</p>
+    </div>
+  </footer>
+</body>
+</html>
