@@ -11,7 +11,7 @@
 
 ## Key facts
 - Requires macOS 13 or later (Intel or Apple Silicon) and a USB contact card reader (CCID). DNIe 3.0/4.0 add NFC but are used through the reader.
-- No telemetry, no analytics, no trackers — in the app or on this website.
+- No telemetry in the app. This website uses optional, consent-gated Google Analytics — off until you accept it in the cookie banner.
 - Detects the DNIe generation (1.0 to 4.0) and gives in-app guidance for a blocked PIN or expired certificates.
 - The DNIe has no PUK: a blocked PIN can only be reset in person at a police DNIe Update Point (PAD) with a fingerprint, with no appointment. Certificates (valid ~2 years) are renewed the same way, for free; there is no online renewal.
 - Pricing: €10 per year, or €150 for a lifetime license, via native Apple In-App Purchase.

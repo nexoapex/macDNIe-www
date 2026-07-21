@@ -6,7 +6,7 @@
   <title>Política de privacidad — macDNIe</title>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="nexoapex">
-  <meta name="description" content="Privacidad de macDNIe: el DNIe se procesa solo en tu Mac, sin telemetría ni analítica. Conexiones limitadas a OCSP y compras de Apple. Derechos RGPD.">
+  <meta name="description" content="Privacidad de macDNIe: el DNIe se procesa solo en tu Mac. Analítica web opcional (Google Analytics) solo con tu consentimiento. OCSP, Apple y RGPD.">
   <link rel="canonical" href="https://macdnie.com/privacidad.html">
   <link rel="alternate" hreflang="es" href="https://macdnie.com/privacidad.html">
   <link rel="alternate" hreflang="en" href="https://macdnie.com/en/privacy.html">
@@ -18,7 +18,7 @@
   <meta property="og:url" content="https://macdnie.com/privacidad.html">
   <meta property="og:site_name" content="macDNIe">
   <meta property="og:title" content="Política de privacidad — macDNIe">
-  <meta property="og:description" content="El DNIe se procesa solo en tu Mac. Sin telemetría, sin analítica, sin rastreadores — ni en la app ni en esta web.">
+  <meta property="og:description" content="El DNIe se procesa solo en tu Mac, sin telemetría. La web usa analítica opcional, solo con tu consentimiento.">
   <meta property="og:image" content="https://macdnie.com/og.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -87,7 +87,7 @@
         "@id": "https://macdnie.com/#org"
       },
       "datePublished": "2026-07-10",
-      "dateModified": "2026-07-10"
+      "dateModified": "2026-07-21"
     },
     {
       "@type": "BreadcrumbList",
@@ -150,9 +150,9 @@
   <main id="contenido" class="wrap prose">
     <p class="eyebrow">Legal</p>
     <h1>Política de privacidad</h1>
-    <p class="updated">Última actualización: 10 de julio de 2026</p>
+    <p class="updated">Última actualización: 21 de julio de 2026</p>
 
-    <p class="lead">La versión corta: macDNIe procesa tu DNIe <strong>solo en tu Mac</strong>. Ni la app ni esta web recogen datos personales, no hay telemetría ni analítica, y no vendemos ni compartimos nada — porque no tenemos nada que vender ni compartir. Lo que sigue es la versión completa.</p>
+    <p class="lead">La versión corta: macDNIe procesa tu DNIe <strong>solo en tu Mac</strong> y la app no tiene telemetría. Esta web usa Google Analytics de forma <strong>opcional</strong>, solo si lo aceptas en el aviso de cookies — y no vendemos ni compartimos nada, porque no tenemos nada que vender ni compartir. Lo que sigue es la versión completa.</p>
 
     <h2><span class="n">1.</span>Responsable del tratamiento</h2>
     <dl class="controller">
@@ -165,8 +165,8 @@
     <p>macDNIe lee tu DNIe a través de un lector de tarjetas, usando el canal seguro que define la propia tarjeta. Los datos que contiene el chip — tu filiación (nombre, número de DNI, fecha y lugar de nacimiento, domicilio, filiación de tus padres…), tu fotografía y tus certificados — <strong>se leen, se muestran en tu pantalla y no salen de tu Mac</strong>. No se transmiten a nexoapex ni a terceros, y la app no los almacena de forma permanente: los documentos que firmas se guardan únicamente donde tú decidas.</p>
     <p>Tu <strong>PIN</strong> se introduce localmente, viaja cifrado dentro del canal seguro entre la app y la tarjeta, y no se guarda, no se registra y no se envía a ningún servidor.</p>
 
-    <h2><span class="n">3.</span>Sin telemetría ni analítica</h2>
-    <p>Ni la aplicación ni este sitio web incorporan telemetría, analítica, identificadores publicitarios, SDK de terceros de seguimiento ni «estadísticas anónimas de uso». No sabemos cuántas veces abres la app, qué haces con ella ni quién eres.</p>
+    <h2><span class="n">3.</span>Telemetría y analítica</h2>
+    <p>La aplicación no incorpora telemetría, identificadores publicitarios ni SDK de seguimiento de ningún tipo: no sabemos cuántas veces abres la app, qué haces con ella ni quién eres. Este sitio web sí ofrece analítica —Google Analytics— pero es estrictamente opcional: se detalla en el apartado 6 y solo se activa si das tu consentimiento expreso en el aviso de cookies.</p>
 
     <h2><span class="n">4.</span>Conexiones de red de la aplicación</h2>
     <p>La app solo se conecta a Internet para tres cosas, todas al servicio de una función que tú inicias:</p>
@@ -180,8 +180,9 @@
     <p>macDNIe se vende mediante compras nativas de Apple (In-App Purchase). El pago lo procesa íntegramente <strong>Apple</strong>: nosotros no vemos ni tu nombre, ni tu dirección, ni tus datos de pago. El tratamiento que hace Apple se rige por su propia política: <a href="https://www.apple.com/legal/privacy/" rel="noopener">apple.com/legal/privacy</a>.</p>
     <p>Para validar las compras y saber si tu licencia está activa usamos <strong>RevenueCat</strong>, que recibe de Apple la información de la transacción (producto comprado, fechas, estado de renovación) asociada a un identificador anónimo generado por la app — no a tu nombre ni a tu correo. Su política: <a href="https://www.revenuecat.com/privacy/" rel="noopener">revenuecat.com/privacy</a>.</p>
 
-    <h2><span class="n">6.</span>Este sitio web</h2>
-    <p>macdnie.com es un sitio estático: no usa cookies, no incorpora analítica ni rastreadores, y no carga recursos de terceros (ni fuentes, ni scripts, ni imágenes externas). El proveedor de alojamiento puede registrar accesos (dirección IP, fecha, página solicitada) en sus registros técnicos estándar, con fines de seguridad y operación del servicio; nexoapex no los usa para identificarte ni los cruza con nada.</p>
+    <h2 id="analitica"><span class="n">6.</span>Este sitio web</h2>
+    <p>macdnie.com es un sitio estático. Por defecto no usa cookies, no incorpora analítica y no carga recursos de terceros. El proveedor de alojamiento puede registrar accesos (dirección IP, fecha, página solicitada) en sus registros técnicos estándar, con fines de seguridad y operación del servicio; nexoapex no los usa para identificarte ni los cruza con nada.</p>
+    <p><strong>Analítica opcional (Google Analytics).</strong> Al entrar en la web te preguntamos si aceptas activar Google Analytics. Mientras no respondas, o si rechazas, no se carga ningún script ni recurso de Google y no se guarda ninguna cookie de analítica —tu elección se recuerda localmente en tu navegador, no en un servidor nuestro. Si aceptas, se carga Google Analytics 4, que registra páginas vistas y datos técnicos básicos (navegador, dispositivo, aproximación geográfica) mediante cookies propias de Google; GA4 no almacena tu dirección IP completa. Estos datos los trata Google LLC como encargado del tratamiento, conforme a su <a href="https://policies.google.com/privacy" rel="noopener">política de privacidad</a>, lo que puede implicar una transferencia de datos fuera del Espacio Económico Europeo. La base jurídica de este tratamiento es tu consentimiento (art. 6.1.a RGPD), que puedes retirar en cualquier momento desde el enlace «Preferencias de cookies» en el pie de página, sin que ello afecte a la licitud del tratamiento previo a su retirada.</p>
 
     <h2><span class="n">7.</span>Correo electrónico</h2>
     <p>Si nos escribes a <a href="mailto:macdnie@nexoapex.com">macdnie@nexoapex.com</a>, trataremos tu dirección y el contenido del mensaje con la única finalidad de responderte y hacer seguimiento de tu consulta (base jurídica: tu consentimiento y nuestro interés legítimo en atender el soporte). Conservamos la correspondencia el tiempo necesario para ese fin y para acreditar el soporte prestado.</p>
@@ -208,9 +209,21 @@
         <li><a href="ca/privadesa.html" hreflang="ca" lang="ca">Català</a></li>
         <li><a href="eu/pribatutasun-politika.html" hreflang="eu" lang="eu">Euskara</a></li>
         <li><a href="gl/privacidade.html" hreflang="gl" lang="gl">Galego</a></li>
+        <li><a href="#" class="consent-reopen">Preferencias de cookies</a></li>
       </ul>
-      <p class="foot-meta">© 2026 nexoapex · macdnie.com · sin cookies, sin analítica, sin rastreadores</p>
+      <p class="foot-meta">© 2026 nexoapex · macdnie.com · analítica opcional, desactivada por defecto</p>
     </div>
   </footer>
+    <!-- ── cookie / analytics consent ── -->
+    <div id="consent-banner" class="consent-banner" role="region" aria-label="Preferencias de cookies" hidden>
+      <div class="wrap consent-inner">
+        <p>Esta web usa <strong>Google Analytics</strong>, pero solo con tu permiso: hasta que lo des, no se carga ningún recurso de Google ni se guarda ninguna cookie de analítica. Puedes cambiar de opinión cuando quieras. Más información en la <a href="privacidad.html#analitica">política de privacidad</a>.</p>
+        <div class="consent-actions">
+          <button type="button" id="consent-reject" class="btn btn-ghost">Rechazar</button>
+          <button type="button" id="consent-accept" class="btn btn-gold">Aceptar</button>
+        </div>
+      </div>
+    </div>
+    <script defer src="assets/consent.js"></script>
 </body>
 </html>

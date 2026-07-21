@@ -269,9 +269,21 @@
         <li><a href="../en/autofirma-mac.html" hreflang="en" lang="en">English</a></li>
         <li><a href="../eu/autofirma-mac.html" hreflang="eu" lang="eu">Euskara</a></li>
         <li><a href="../gl/autofirma-mac.html" hreflang="gl" lang="gl">Galego</a></li>
+        <li><a href="#" class="consent-reopen">Preferències de cookies</a></li>
       </ul>
-      <p class="foot-meta">© 2026 nexoapex · macdnie.com · sense cookies, sense analítica, sense rastrejadors</p>
+      <p class="foot-meta">© 2026 nexoapex · macdnie.com · analítica opcional, desactivada per defecte</p>
     </div>
   </footer>
+    <!-- ── cookie / analytics consent ── -->
+    <div id="consent-banner" class="consent-banner" role="region" aria-label="Preferències de cookies" hidden>
+      <div class="wrap consent-inner">
+        <p>Aquesta web utilitza <strong>Google Analytics</strong>, però només amb el teu permís: mentre no el donis, no es carrega cap recurs de Google ni es guarda cap cookie d'analítica. Pots canviar d'opinió quan vulguis. Més informació a la <a href="privadesa.html#analitica">política de privadesa</a>.</p>
+        <div class="consent-actions">
+          <button type="button" id="consent-reject" class="btn btn-ghost">Rebutjar</button>
+          <button type="button" id="consent-accept" class="btn btn-gold">Acceptar</button>
+        </div>
+      </div>
+    </div>
+    <script defer src="../assets/consent.js"></script>
 </body>
 </html>

@@ -431,6 +431,31 @@ a { color: inherit; }
 .notfound p { color: var(--ink-soft); max-width: 34em; margin: 10px auto 26px; }
 .notfound svg { width: 56px; height: 56px; margin-inline: auto; }
 
+/* ── cookie / analytics consent banner ── */
+.consent-banner {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+  background: var(--raise); border-top: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.consent-inner {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 14px 32px; padding-block: 18px;
+}
+.consent-inner p {
+  margin: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.55;
+  max-width: 62em; flex: 1 1 380px;
+}
+.consent-actions { display: flex; gap: 12px; flex-shrink: 0; }
+.consent-actions .btn {
+  appearance: none; -webkit-appearance: none; font-family: var(--sans);
+  padding: 9px 18px; font-size: 14px; cursor: pointer;
+}
+@media (max-width: 560px) {
+  .consent-inner { padding-block: 16px; }
+  .consent-actions { width: 100%; }
+  .consent-actions .btn { flex: 1; justify-content: center; }
+}
+
 /* ── motion discipline ── */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

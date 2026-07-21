@@ -1,6 +1,8 @@
 # Security + caching headers for Netlify / Cloudflare Pages.
 # (Other hosts: replicate via vercel.json, .htaccess, nginx, etc.)
-# All resources are same-origin; JSON-LD is non-executable data (exempt from script-src).
+# All resources are same-origin except Google Analytics (loaded only post-consent,
+# see assets/consent.js) — explicitly allowlisted below, nothing else cross-origin.
+# JSON-LD is non-executable data (exempt from script-src).
 
 /*
   X-Content-Type-Options: nosniff
@@ -8,7 +10,7 @@
   X-Frame-Options: DENY
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=(), interest-cohort=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; img-src 'self' https://www.google-analytics.com https://*.google-analytics.com; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
   Cache-Control: public, max-age=3600, must-revalidate
 
 # Static assets (filenames not content-hashed) — cache a week, override the default above.

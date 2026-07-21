@@ -1,8 +1,9 @@
 # macdnie.com — marketing & support site
 
-Static, hand-written HTML + one shared CSS file + one tiny JS file. **No build
-step, no dependencies, no external resources** (no CDNs, no web fonts, no
-analytics): the app's privacy pledge is true of the website itself.
+Static, hand-written HTML + shared CSS/JS. **No build step, no dependencies**
+(no CDNs, no web fonts, no build tooling). The one deliberate third-party
+exception is Google Analytics, loaded only after explicit cookie-banner
+consent — see `privacidad.html` §6 and `assets/consent.js`.
 
 ## Deploy
 

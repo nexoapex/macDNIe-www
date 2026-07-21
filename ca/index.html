@@ -351,7 +351,7 @@
     <section class="wrap section" id="como-funciona">
       <p class="eyebrow">Com funciona</p>
       <h2>Tot passa al teu Mac.</h2>
-      <p class="section-intro">macDNIe parla amb la teva targeta a través del lector, mitjançant el canal segur que defineix el mateix DNIe. No hi ha cap servidor pel mig, ni cap compte per crear, ni «núvol». Aquest compromís també és vàlid per a aquesta web: ni cookies, ni analítica, ni recursos de tercers.</p>
+      <p class="section-intro">macDNIe parla amb la teva targeta a través del lector, mitjançant el canal segur que defineix el mateix DNIe. No hi ha cap servidor pel mig, ni cap compte per crear, ni «núvol». Aquesta web fa servir exactament un recurs de tercers — Google Analytics — i només si tu l'acceptes explícitament.</p>
 
       <dl class="pledges">
         <div>
@@ -364,7 +364,7 @@
         </div>
         <div>
           <dt>Telemetria</dt>
-          <dd>Zero. Ni analítica, ni identificadors de dispositiu, ni «estadístiques anònimes d'ús». Ni a l'app ni en aquesta web.</dd>
+          <dd>Zero a l'app: ni analítica, ni identificadors, ni «estadístiques d'ús». En aquesta web, Google Analytics és opcional i només s'activa si l'acceptes.</dd>
         </div>
         <div>
           <dt>Xarxa</dt>
@@ -502,9 +502,21 @@
         <li><a href="../en/" hreflang="en" lang="en">English</a></li>
         <li><a href="../eu/" hreflang="eu" lang="eu">Euskara</a></li>
         <li><a href="../gl/" hreflang="gl" lang="gl">Galego</a></li>
+        <li><a href="#" class="consent-reopen">Preferències de cookies</a></li>
       </ul>
-      <p class="foot-meta">© 2026 nexoapex · macdnie.com · sense cookies, sense analítica, sense rastrejadors</p>
+      <p class="foot-meta">© 2026 nexoapex · macdnie.com · analítica opcional, desactivada per defecte</p>
     </div>
   </footer>
+    <!-- ── cookie / analytics consent ── -->
+    <div id="consent-banner" class="consent-banner" role="region" aria-label="Preferències de cookies" hidden>
+      <div class="wrap consent-inner">
+        <p>Aquesta web utilitza <strong>Google Analytics</strong>, però només amb el teu permís: mentre no el donis, no es carrega cap recurs de Google ni es guarda cap cookie d'analítica. Pots canviar d'opinió quan vulguis. Més informació a la <a href="privadesa.html#analitica">política de privadesa</a>.</p>
+        <div class="consent-actions">
+          <button type="button" id="consent-reject" class="btn btn-ghost">Rebutjar</button>
+          <button type="button" id="consent-accept" class="btn btn-gold">Acceptar</button>
+        </div>
+      </div>
+    </div>
+    <script defer src="../assets/consent.js"></script>
 </body>
 </html>

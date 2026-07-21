@@ -351,7 +351,7 @@
     <section class="wrap section" id="como-funciona">
       <p class="eyebrow">Como funciona</p>
       <h2>Todo ocorre no teu Mac.</h2>
-      <p class="section-intro">macDNIe fala coa túa tarxeta a través do lector, mediante a canle segura que define o propio DNIe. Non hai servidor polo medio, nin conta que crear, nin «nube». Este compromiso tamén vale para esta web: nin cookies, nin analítica, nin recursos de terceiros.</p>
+      <p class="section-intro">macDNIe fala coa túa tarxeta a través do lector, mediante a canle segura que define o propio DNIe. Non hai servidor polo medio, nin conta que crear, nin «nube». Esta web só usa un recurso de terceiros —Google Analytics— e só se ti o aceptas explicitamente.</p>
 
       <dl class="pledges">
         <div>
@@ -364,7 +364,7 @@
         </div>
         <div>
           <dt>Telemetría</dt>
-          <dd>Cero. Nin analítica, nin identificadores de dispositivo, nin «estatísticas anónimas de uso». Nin na app nin nesta web.</dd>
+          <dd>Cero na app: nin analítica, nin identificadores, nin «estatísticas de uso». Nesta web, Google Analytics é opcional e só se activa se ti o aceptas.</dd>
         </div>
         <div>
           <dt>Rede</dt>
@@ -502,9 +502,21 @@
         <li><a href="../en/" hreflang="en" lang="en">English</a></li>
         <li><a href="../ca/" hreflang="ca" lang="ca">Català</a></li>
         <li><a href="../eu/" hreflang="eu" lang="eu">Euskara</a></li>
+        <li><a href="#" class="consent-reopen">Preferencias de cookies</a></li>
       </ul>
-      <p class="foot-meta">© 2026 nexoapex · macdnie.com · sen cookies, sen analítica, sen rastrexadores</p>
+      <p class="foot-meta">© 2026 nexoapex · macdnie.com · analítica opcional, desactivada por defecto</p>
     </div>
   </footer>
+    <!-- ── cookie / analytics consent ── -->
+    <div id="consent-banner" class="consent-banner" role="region" aria-label="Preferencias de cookies" hidden>
+      <div class="wrap consent-inner">
+        <p>Esta web usa <strong>Google Analytics</strong>, pero só co teu permiso: ata que o des, non se carga ningún recurso de Google nin se garda ningunha cookie de analítica. Podes cambiar de opinión cando queiras. Máis información na <a href="privacidade.html#analitica">política de privacidade</a>.</p>
+        <div class="consent-actions">
+          <button type="button" id="consent-reject" class="btn btn-ghost">Rexeitar</button>
+          <button type="button" id="consent-accept" class="btn btn-gold">Aceptar</button>
+        </div>
+      </div>
+    </div>
+    <script defer src="../assets/consent.js"></script>
 </body>
 </html>

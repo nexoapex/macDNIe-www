@@ -238,9 +238,21 @@
         <li><a href="ca/glossari.html" hreflang="ca" lang="ca">Català</a></li>
         <li><a href="eu/glosarioa.html" hreflang="eu" lang="eu">Euskara</a></li>
         <li><a href="gl/glosario.html" hreflang="gl" lang="gl">Galego</a></li>
+        <li><a href="#" class="consent-reopen">Preferencias de cookies</a></li>
       </ul>
-      <p class="foot-meta">© 2026 nexoapex · macdnie.com · sin cookies, sin analítica, sin rastreadores</p>
+      <p class="foot-meta">© 2026 nexoapex · macdnie.com · analítica opcional, desactivada por defecto</p>
     </div>
   </footer>
+    <!-- ── cookie / analytics consent ── -->
+    <div id="consent-banner" class="consent-banner" role="region" aria-label="Preferencias de cookies" hidden>
+      <div class="wrap consent-inner">
+        <p>Esta web usa <strong>Google Analytics</strong>, pero solo con tu permiso: hasta que lo des, no se carga ningún recurso de Google ni se guarda ninguna cookie de analítica. Puedes cambiar de opinión cuando quieras. Más información en la <a href="privacidad.html#analitica">política de privacidad</a>.</p>
+        <div class="consent-actions">
+          <button type="button" id="consent-reject" class="btn btn-ghost">Rechazar</button>
+          <button type="button" id="consent-accept" class="btn btn-gold">Aceptar</button>
+        </div>
+      </div>
+    </div>
+    <script defer src="assets/consent.js"></script>
 </body>
 </html>
