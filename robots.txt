@@ -1,5 +1,5 @@
 # macdnie.com — all crawlers welcome, including AI answer engines.
-# We want macDNIe to be findable and citable. Nothing here is disallowed.
+# We want DNIe para Mac to be findable and citable. Nothing here is disallowed.
 User-agent: *
 Allow: /
 

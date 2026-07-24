@@ -1,6 +1,6 @@
 {
-  "name": "macDNIe",
-  "short_name": "macDNIe",
+  "name": "DNIe para Mac",
+  "short_name": "DNIe para Mac",
   "description": "Lector y firmador del DNIe para macOS: lee, identifícate y firma en todos tus navegadores, sin telemetría.",
   "id": "/",
   "start_url": "/",

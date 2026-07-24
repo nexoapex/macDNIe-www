@@ -1,13 +1,13 @@
-# macDNIe
+# DNIe para Mac
 
-> macDNIe is an unofficial macOS app to read, authenticate with, and sign documents using the Spanish electronic national ID card (DNIe / Documento Nacional de Identidad electrónico). All processing happens on-device — the PIN and personal data never leave the Mac. The app's interface is available in Spanish, Catalan, Basque and Galician; this website (macdnie.com) is published in all five languages: Spanish (root), English (/en/), Catalan (/ca/), Basque (/eu/) and Galician (/gl/). Publisher: nexoapex. It is not affiliated with or endorsed by the Spanish government.
+> DNIe para Mac is an unofficial macOS app to read, authenticate with, and sign documents using the Spanish electronic national ID card (DNIe / Documento Nacional de Identidad electrónico). All processing happens on-device — the PIN and personal data never leave the Mac. The app's interface is available in Spanish, Catalan, Basque and Galician; this website (macdnie.com) is published in all five languages: Spanish (root), English (/en/), Catalan (/ca/), Basque (/eu/) and Galician (/gl/). Publisher: nexoapex. It is not affiliated with or endorsed by the Spanish government.
 
-## What macDNIe does
+## What DNIe para Mac does
 - Reads the DNIe's personal data and photo, entirely on-device.
 - Signs you in to Spanish e-government sites (sedes electrónicas) from Safari, Chrome, Edge and Firefox.
 - Signs documents in PAdES (PDF), CAdES and XAdES formats, with an RFC-3161 timestamp; also validates already-signed documents.
 - Interoperable with AutoFirma: it complements AutoFirma and does not replace it by force.
-- Sign-in uses macOS's native integration (CryptoTokenKit) in Safari, Chrome and Edge; for Firefox, macDNIe includes its own PKCS#11 module in the direct-download edition (not the App Store build).
+- Sign-in uses macOS's native integration (CryptoTokenKit) in Safari, Chrome and Edge; for Firefox, DNIe para Mac includes its own PKCS#11 module in the direct-download edition (not the App Store build).
 
 ## Key facts
 - Requires macOS 13 or later (Intel or Apple Silicon) and a USB contact card reader (CCID). DNIe 3.0/4.0 add NFC but are used through the reader.
@@ -24,7 +24,7 @@ Each page below is published in five languages: Spanish (es, language of record)
 - Privacy policy: [es](https://macdnie.com/privacidad.html) · [en](https://macdnie.com/en/privacy.html) · [ca](https://macdnie.com/ca/privadesa.html) · [eu](https://macdnie.com/eu/pribatutasun-politika.html) · [gl](https://macdnie.com/gl/privacidade.html)
 - Terms of use: [es](https://macdnie.com/condiciones.html) · [en](https://macdnie.com/en/terms.html) · [ca](https://macdnie.com/ca/condicions.html) · [eu](https://macdnie.com/eu/erabilera-baldintzak.html) · [gl](https://macdnie.com/gl/condicions.html)
 - Blocked PIN / expired certificate guide — the DNIe has no PUK; unblocking and renewal only happen in person, at a PAD, free, no appointment: [es](https://macdnie.com/pin-bloqueado.html) · [en](https://macdnie.com/en/dnie-pin-blocked.html) · [ca](https://macdnie.com/ca/pin-bloquejat.html) · [eu](https://macdnie.com/eu/pin-blokeatua.html) · [gl](https://macdnie.com/gl/pin-bloqueado.html)
-- AutoFirma on Mac — what AutoFirma is, when it's still needed, and how macDNIe complements it: [es](https://macdnie.com/autofirma-mac.html) · [en](https://macdnie.com/en/autofirma-mac.html) · [ca](https://macdnie.com/ca/autofirma-mac.html) · [eu](https://macdnie.com/eu/autofirma-mac.html) · [gl](https://macdnie.com/gl/autofirma-mac.html)
+- AutoFirma on Mac — what AutoFirma is, when it's still needed, and how DNIe para Mac complements it: [es](https://macdnie.com/autofirma-mac.html) · [en](https://macdnie.com/en/autofirma-mac.html) · [ca](https://macdnie.com/ca/autofirma-mac.html) · [eu](https://macdnie.com/eu/autofirma-mac.html) · [gl](https://macdnie.com/gl/autofirma-mac.html)
 - Glossary — DNIe and e-signature terms (PAdES, CAdES, XAdES, PKCS#11, CWA 14890, OCSP, PAD, sede electrónica, AutoFirma): [es](https://macdnie.com/glosario.html) · [en](https://macdnie.com/en/dnie-glossary.html) · [ca](https://macdnie.com/ca/glossari.html) · [eu](https://macdnie.com/eu/glosarioa.html) · [gl](https://macdnie.com/gl/glosario.html)
 
 ## Optional

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Glossari del DNIe i la signatura electrònica — macDNIe</title>
+  <title>Glossari del DNIe i la signatura electrònica — DNIe per a Mac</title>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="nexoapex">
   <meta name="description" content="Què són PAdES, CAdES, XAdES, PKCS#11, CWA 14890, OCSP, PAD i AutoFirma. Glossari clar dels termes del DNIe i la signatura electrònica a macOS.">
@@ -16,14 +16,14 @@
   <link rel="alternate" hreflang="x-default" href="https://macdnie.com/glosario.html">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://macdnie.com/ca/glossari.html">
-  <meta property="og:site_name" content="macDNIe">
+  <meta property="og:site_name" content="DNIe per a Mac">
   <meta property="og:title" content="Glossari del DNIe i la signatura electrònica">
   <meta property="og:description" content="PAdES, CAdES, XAdES, PKCS#11, CWA 14890, OCSP, PAD, seu electrònica, AutoFirma i més — explicat clar.">
   <meta property="og:image" content="https://macdnie.com/og.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="macDNIe — lector i signador del DNIe per a macOS">
+  <meta property="og:image:alt" content="DNIe per a Mac — lector i signador del DNIe per a macOS">
   <meta property="og:locale" content="ca_ES">
   <meta property="og:locale:alternate" content="es_ES">
   <meta property="og:locale:alternate" content="en_US">
@@ -31,7 +31,7 @@
   <meta property="og:locale:alternate" content="gl_ES">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://macdnie.com/og.png">
-  <meta name="twitter:image:alt" content="macDNIe — lector i signador del DNIe per a macOS">
+  <meta name="twitter:image:alt" content="DNIe per a Mac — lector i signador del DNIe per a macOS">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e7e7e2">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121419">
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
@@ -69,7 +69,7 @@
       "@type": "WebSite",
       "@id": "https://macdnie.com/#website",
       "url": "https://macdnie.com/",
-      "name": "macDNIe",
+      "name": "DNIe per a Mac",
       "publisher": {
         "@id": "https://macdnie.com/#org"
       }
@@ -132,7 +132,7 @@
   <a class="skip" href="#contenido">Salta al contingut</a>
 
   <header class="wrap site-head">
-    <a class="brand" href="index.html" aria-label="macDNIe, inici">
+    <a class="brand" href="index.html" aria-label="DNIe per a Mac, inici">
       <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M33 17 C 37 9.5, 46 9, 46 9 C 46 9, 45 17.5, 38.5 20 C 35.3 21.1, 33.4 19.6, 33 17 Z" fill="var(--gold)"/>
         <path d="M31.4 18.5 C 30.8 14.5, 30.2 12, 28.4 10" fill="none" stroke="var(--ink)" stroke-width="2.1" stroke-linecap="round"/>
@@ -146,7 +146,7 @@
           <line x1="32" y1="41.4" x2="32" y2="44.6"/>
         </g>
       </svg>
-      <b>mac<span>DNIe</span></b>
+      <b><span>DNIe per a Mac</span></b>
     </a>
     <nav class="site-nav" aria-label="Principal">
       <a class="nav-link" href="index.html#funciones">Funcions</a>
@@ -197,7 +197,7 @@
     <p><em>Online Certificate Status Protocol.</em> Protocol per comprovar en temps real si un certificat digital ha estat revocat, consultant només l'identificador del certificat en qüestió.</p>
 
     <h2 id="pkcs11">PKCS#11</h2>
-    <p>Estàndard criptogràfic que defineix una interfície comuna perquè les aplicacions —com els navegadors— accedeixin a targetes intel·ligents i tokens criptogràfics. Firefox a macOS el necessita per reconèixer els certificats d'una targeta com el DNIe; per això macDNIe inclou el seu propi mòdul PKCS#11 a la versió de descàrrega directa. Més informació a la guia d'<a href="autofirma-mac.html">AutoFirma al Mac</a>.</p>
+    <p>Estàndard criptogràfic que defineix una interfície comuna perquè les aplicacions —com els navegadors— accedeixin a targetes intel·ligents i tokens criptogràfics. Firefox a macOS el necessita per reconèixer els certificats d'una targeta com el DNIe; per això DNIe per a Mac inclou el seu propi mòdul PKCS#11 a la versió de descàrrega directa. Més informació a la guia d'<a href="autofirma-mac.html">AutoFirma al Mac</a>.</p>
 
     <h2 id="pkcs15">PKCS#15</h2>
     <p>Estàndard que defineix com s'organitzen i s'emmagatzemen certificats, claus i dades dins del xip d'una targeta intel·ligent com el DNIe, perquè qualsevol lector compatible els sàpiga interpretar de manera uniforme.</p>
@@ -223,12 +223,12 @@
     <h2 id="autofirma">AutoFirma</h2>
     <p>Aplicació oficial de signatura electrònica, distribuïda gratuïtament pel Gobierno de España, que moltes seus electròniques invoquen directament des del navegador per signar un tràmit al moment. Comparativa completa: <a href="autofirma-mac.html">AutoFirma al Mac</a>.</p>
 
-    <p>Et falta algun terme? <a href="mailto:macdnie@nexoapex.com?subject=macDNIe%20—%20glossari">Escriu-nos</a> i l'afegim.</p>
+    <p>Et falta algun terme? <a href="mailto:macdnie@nexoapex.com?subject=DNIe%20per%20a%20Mac%20—%20glossari">Escriu-nos</a> i l'afegim.</p>
   </main>
 
   <footer class="site-foot">
     <div class="wrap">
-      <p class="disclaimer"><strong>Producte no oficial.</strong> macDNIe no està afiliat ni avalat per la Dirección General de la Policía, el Ministerio del Interior ni el Gobierno de España. «DNIe» designa el Document Nacional d'Identitat electrònic, expedit per la Dirección General de la Policía. Tot el tractament del DNIe té lloc al teu dispositiu; no es transmet cap dada personal.</p>
+      <p class="disclaimer"><strong>Producte no oficial.</strong> DNIe per a Mac no està afiliat ni avalat per la Dirección General de la Policía, el Ministerio del Interior ni el Gobierno de España. «DNIe» designa el Document Nacional d'Identitat electrònic, expedit per la Dirección General de la Policía. Tot el tractament del DNIe té lloc al teu dispositiu; no es transmet cap dada personal.</p>
       <ul class="foot-nav">
         <li><a href="privadesa.html">Política de privadesa</a></li>
         <li><a href="condicions.html">Condicions d'ús</a></li>
